@@ -1,3 +1,3 @@
 User-agent: *
 
-Sitemap: https://AliceNN-ucdenver.github.io/sitemap.xml
+Sitemap: https://mccarthy.phd/sitemap.xml
