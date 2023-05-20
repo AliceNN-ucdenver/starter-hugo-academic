@@ -69,27 +69,35 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: Vice President, Global Architecture, Risk and Data
+          company: Manulife
           company_url: ''
           company_logo: org-gc
-          location: California
-          date_start: '2021-01-01'
+          location: Massachusetts
+          date_start: '2021-03-01'
           date_end: ''
           description: |2-
               Responsibilities include:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
+              * Global Architecture
+              * Risk
+              * Data
+        - title: Graduate Instructor
+          company: University of Colorado Denver
           company_url: ''
           company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+          location: Colorado
+          date_start: '2015-01-01'
+          date_end: ''
+          description:  Teaching course in Web API Technologies.
+        - title: Managing Director - Platform and Application Architecture
+          company: Charles Schwab
+          company_url: ''
+          company_logo: org-x
+          location: Colorado
+          date_start: '2016-09-01'
+          date_end: '2020-03-01'
+          description:  Leader of Schwab’s Platform and Application Architecture team
     design:
       columns: '2'
   - block: accomplishments
