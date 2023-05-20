@@ -22,7 +22,7 @@ organizations:
     url: https://engineering.ucdenver.edu/departments/computer-science-and-engineering
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research seeks to develop a novel approach for understanding how emotional news analysis and world events influence market sentiment and the performance of companies across various sectors. By integrating the insights derived from the analysis of global events and their effects on future commodities, we aim to create a more comprehensive and robust model framework for market prediction and risk management. This approach will enable organizations to make better-informed decisions and navigate the complexities of the financial markets in the face of an increasingly interconnected global economy.
 
 # Interests to show in About widget
 interests:
