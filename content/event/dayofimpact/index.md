@@ -6,7 +6,7 @@ event_url: https://membership.anitab.org/events/EventDetails.aspx?id=1737320
 
 location: Zoom
 
-summary: "Shawn's work seeks to develop a novel approach for understanding how news analysis and global events influence market sentiment and performance across various sectors. By creating a comprehensive model for market prediction and risk management, he aims to help organizations navigate the complexities of financial markets in an interconnected global economy."
+summary: This work seeks to develop a novel approach for understanding how news analysis and global events influence market sentiment and performance across various sectors. By creating a comprehensive model for market prediction and risk management, he aims to help organizations navigate the complexities of financial markets in an interconnected global economy.
 abstract: 'Financial risk management is best defined as a process to deal with uncertainties resulting from financial markets.  Karen Horcher defines financial risk management as the process of identifying, assessing, and controlling financial risks that may impact an organization's ability to achieve its financial objectives. This includes identifying risks related to credit, market, liquidity, operational, and other areas, and developing strategies and techniques to mitigate those risks. (Horcher, 2011).  Emotional analysis of financial news can provide insight into market sentiment and enable investors to gain a better understanding on how the market is likely to react.  By analyzing the emotional content of news articles, organizations can gain insights into potential risks and opportunities and develop strategies to mitigate or capitalize on them.'
 
 # Talk start and end times.
