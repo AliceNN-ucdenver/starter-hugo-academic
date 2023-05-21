@@ -22,6 +22,13 @@ main:
   - name: Contact
     url: '#contact'
     weight: 60
+  - name: Courses
+    weight: 70
+    identifier: courses
+  - name: Web APIs
+    PageRef: course/web-api/_index.md
+    weight: 10
+    parent: courses
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
