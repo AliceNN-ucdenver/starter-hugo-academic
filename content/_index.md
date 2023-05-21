@@ -228,7 +228,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: shawn.mccarthy@ucdenver.edu
       phone: (303) 900-8613
-      appointment_url: 'https://calendly.com'
+      appointment_url: 'https://calendly.com/shawnemccarthy/30min'
       address:
         street: 1380 Lawrence Street, 8th floor
         city: Denver
