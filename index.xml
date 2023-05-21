@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link><atom:link href="https://mccarthy.phd/index.xml" rel="self" type="application/rss+xml"/><description>Shawn McCarthy</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://mccarthy.phd/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link></image><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link><atom:link href="https://mccarthy.phd/index.xml" rel="self" type="application/rss+xml"/><description>Shawn McCarthy</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://mccarthy.phd/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link></image><item><title>Python basics</title><link>https://mccarthy.phd/course/web-api/python/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/python/</guid><description>&lt;p>Build a foundation in Python.&lt;/p>
+&lt;p>
+&lt;i class="fas fa-clock pr-1 fa-fw">&lt;/i> 1-2 hours per week, for 8 weeks&lt;/p>
+&lt;h2 id="learn">Learn&lt;/h2>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/rfscVS0vtbw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;h2 id="quiz">Quiz&lt;/h2>
+&lt;details class="spoiler " id="spoiler-2">
+&lt;summary>What is the difference between lists and tuples?&lt;/summary>
+&lt;p>&lt;p>Lists&lt;/p>
+&lt;ul>
+&lt;li>Lists are mutable - they can be changed&lt;/li>
+&lt;li>Slower than tuples&lt;/li>
+&lt;li>Syntax: &lt;code>a_list = [1, 2.0, 'Hello world']&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;p>Tuples&lt;/p>
+&lt;ul>
+&lt;li>Tuples are immutable - they can&amp;rsquo;t be changed&lt;/li>
+&lt;li>Tuples are faster than lists&lt;/li>
+&lt;li>Syntax: &lt;code>a_tuple = (1, 2.0, 'Hello world')&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;/p>
+&lt;/details>
+&lt;details class="spoiler " id="spoiler-3">
+&lt;summary>Is Python case-sensitive?&lt;/summary>
+&lt;p>Yes&lt;/p>
+&lt;/details></description></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
 &lt;p>&lt;strong>Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong>&lt;/p>
 &lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
@@ -89,7 +116,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-754321896" class="chart">&lt;/div>
+&lt;div id="chart-239417586" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -98,7 +125,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-754321896', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-239417586', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
