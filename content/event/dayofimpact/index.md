@@ -36,7 +36,7 @@ links:
     link: 'https://discordapp.com/users/shawnemccarthy/#6921'
 url_code: ''
 url_pdf: ''
-url_slides: 'static/uploads/AnitaB AI Day of Impact - Shawn McCarthy.pdf'
+url_slides: 'uploads/AnitaB AI Day of Impact - Shawn McCarthy.pdf'
 url_video: ''
 
 # Markdown Slides (optional).
