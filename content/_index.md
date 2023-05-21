@@ -50,7 +50,7 @@ sections:
         - title: Vice President, Global Architecture, Risk and Data
           company: Manulife
           company_url: ''
-          company_logo: org-gc
+          company_logo: manulife
           location: Massachusetts
           date_start: '2021-03-01'
           date_end: ''
@@ -63,7 +63,7 @@ sections:
         - title: Graduate Instructor
           company: University of Colorado Denver
           company_url: ''
-          company_logo: org-x
+          company_logo: colorado
           location: Colorado
           date_start: '2015-01-01'
           date_end: ''
@@ -71,7 +71,7 @@ sections:
         - title: Managing Director - Platform and Application Architecture
           company: Charles Schwab
           company_url: ''
-          company_logo: org-x
+          company_logo: charles
           location: Colorado
           date_start: '2016-09-01'
           date_end: '2020-03-01'
@@ -171,14 +171,14 @@ sections:
       view: showcase
       # For Showcase view, flip alternate rows?
       flip_alt_rows: false
-  - block: markdown
-    content:
-      title: Gallery
-      subtitle: ''
-      text: |-
-        {{< gallery album="demo" >}}
-    design:
-      columns: '1'
+  #- block: markdown
+  #  content:
+  #    title: Gallery
+  #    subtitle: ''
+  #    text: |-
+  #      {{< gallery album="demo" >}}
+  #  design:
+  #    columns: '1'
   - block: collection
     id: featured
     content:
