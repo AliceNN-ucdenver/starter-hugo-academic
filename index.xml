@@ -319,8 +319,188 @@
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/a>&lt;/p></description></item><item><title>Assignment Three</title><link>https://mccarthy.phd/course/web-api/assignment3/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment3/</guid><description>&lt;h1 id="csc3916-assignment-3">CSC3916 Assignment 3&lt;/h1>
-&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;/a>&lt;/p></description></item><item><title>Assignment Four</title><link>https://mccarthy.phd/course/web-api/assignment4/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment4/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>Using the information already entered to MongoDB for the previous assignment, you will add another collection of reviews that are tied to the movies. This way users can query the database and get the previous information (title, year released and actors) as well as the reviews.&lt;/p>
+&lt;p>The purpose of this assignment is to leverage Google’s analytics policies to gather information about the requests being sent in by users.&lt;/p>
+&lt;h2 id="pre-requisites">Pre-requisites&lt;/h2>
+&lt;ul>
+&lt;li>Basic knowledge of JavaScript and Node.js&lt;/li>
+&lt;li>MongoDB account and basic understanding of MongoDB and Mongoose&lt;/li>
+&lt;li>Google Analytics account&lt;/li>
+&lt;li>Postman for testing APIs&lt;/li>
+&lt;li>Git and GitHub for version control&lt;/li>
+&lt;li>Basic knowledge of deployment to Heroku or Render&lt;/li>
+&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment4" target="_blank" rel="noopener">Assignment 3&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-1-create-a-new-collection-for-reviews">Step 1: Create a new Collection for Reviews&lt;/h2>
+&lt;p>In your MongoDB database, create a new collection named &lt;code>Reviews&lt;/code> to hold reviews about movies. Each review should contain the following fields:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>movieId&lt;/code>: from the &lt;code>Movies&lt;/code> collection&lt;/li>
+&lt;li>&lt;code>username&lt;/code>: name of the reviewer&lt;/li>
+&lt;li>&lt;code>review&lt;/code>: the actual review text&lt;/li>
+&lt;li>&lt;code>rating&lt;/code>: rating out of five stars given by the reviewer&lt;/li>
+&lt;/ul>
+&lt;div class="mermaid">classDiagram
+class Review {
++ObjectId _id
++String movieId
++String username
++String review
++Number rating
+}
+&lt;/div>
+&lt;p>Here&amp;rsquo;s an example of a Mongoose schema for the &lt;code>Review&lt;/code>:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">reviewSchema&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">movieId&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Types&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">ObjectId&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">ref&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;Movie&amp;#39;&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">username&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">review&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">rating&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">Number&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">max&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">5&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-2-update-api-to-include-reviews">Step 2: Update API to Include Reviews&lt;/h2>
+&lt;p>Your API from assignment 3 should be updated to interact with the &lt;code>Reviews&lt;/code> collection. It should support &lt;code>GET&lt;/code> and &lt;code>POST&lt;/code> operations for reviews, with &lt;code>DELETE&lt;/code> being optional. The &lt;code>POST&lt;/code> operation should be secured with a JWT authorization token.&lt;/p>
+&lt;ul>
+&lt;li>If review created send back JSON message &lt;code>{ message: 'Review created!' }&lt;/code>&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-3-implement-aggregation-of-reviews-and-movies">Step 3: Implement Aggregation of Reviews and Movies&lt;/h2>
+&lt;p>If the user sends a request with the query parameter &lt;code>reviews=true&lt;/code>, the response should include the movie information as well as all the reviews for the movie. This aggregation can be done using MongoDB&amp;rsquo;s &lt;code>$lookup&lt;/code> operator or Async.js library.&lt;/p>
+&lt;p>Here&amp;rsquo;s a quick example of how you could use &lt;code>$lookup&lt;/code> in Mongoose to aggregate data from &lt;code>Items&lt;/code> and &lt;code>Orders&lt;/code> collections:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Order&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">aggregate&lt;/span>&lt;span class="p">([&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$match&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">_id&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">orderId&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="c1">// replace orderId with the actual order id
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$lookup&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">from&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;items&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// name of the foreign collection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">localField&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;items&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// field in the orders collection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">foreignField&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;_id&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// field in the items collection
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">as&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s2">&amp;#34;itemDetails&amp;#34;&lt;/span> &lt;span class="c1">// output array where the joined items will be placed
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]).&lt;/span>&lt;span class="nx">exec&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">result&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// handle error
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">result&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-4-add-custom-analytics-extra-credit">Step 4: Add Custom Analytics (Extra Credit)&lt;/h2>
+&lt;p>Create a custom analytics policy that describes the number of times each movie has been reviewed.&lt;/p>
+&lt;ul>
+&lt;li>Create a custom analytics policy that describes the number of times each movie has been reviewed. To do this, you will have to send a number of requests for each movie.
+&lt;ul>
+&lt;li>Custom Dimension: Movie Name&lt;/li>
+&lt;li>Custom Metric: Requested: Value 1 (it will aggregate)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Custom Dimension and Metric should be sent with an Event type
+&lt;ul>
+&lt;li>Event Category: Genre of Movie (e.g. Western)&lt;/li>
+&lt;li>Event Action: Url Path (e.g. post /reviews)&lt;/li>
+&lt;li>Event Label: API Request for Movie Review&lt;/li>
+&lt;li>Event Value: 1&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>To open up the screens on Google Analytics you need to implement the first property: &lt;a href="https://support.google.com/analytics/answer/10269537Links" target="_blank" rel="noopener">https://support.google.com/analytics/answer/10269537Links&lt;/a> to an external site.&lt;/p>
+&lt;p>Also it takes awhile for events to show up (for it to index) so don&amp;rsquo;t worry if you don&amp;rsquo;t see your events immediately.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">express&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;express&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">bodyParser&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;body-parser&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">crypto&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;crypto&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">rp&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">require&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;request-promise&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">app&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">express&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">use&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">bodyParser&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">use&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">bodyParser&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">urlencoded&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">extended&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">false&lt;/span> &lt;span class="p">}));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">router&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">express&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Router&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">GA_TRACKING_ID&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">process&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">env&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">GA_KEY&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kd">function&lt;/span> &lt;span class="nx">trackDimension&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">category&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">action&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">label&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">dimension&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">metric&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">options&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">method&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;GET&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">url&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;https://www.google-analytics.com/collect&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">qs&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span> &lt;span class="c1">// API Version.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">v&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Tracking ID / Property ID.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">tid&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">GA_TRACKING_ID&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Random Client Identifier. Ideally, this should be a UUID that
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// is associated with particular user, device, or browser instance.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">cid&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">crypto&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">randomBytes&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">16&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">toString&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;hex&amp;#34;&lt;/span>&lt;span class="p">),&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Event hit type.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">t&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;event&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Event category.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">ec&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">category&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Event action.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">ea&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">action&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Event label.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">el&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">label&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Event value.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">ev&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">value&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Custom Dimension
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">cd1&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">dimension&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Custom Metric
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">cm1&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">metric&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">headers&lt;/span>&lt;span class="o">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span> &lt;span class="s1">&amp;#39;Cache-Control&amp;#39;&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;no-cache&amp;#39;&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nx">rp&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">options&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">router&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/test&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Event value must be numeric.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">trackDimension&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Feedback&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Rating&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Feedback for Movie&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;3&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Guardian\&amp;#39;s of the Galaxy 2&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">then&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">body&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">200&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">send&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Event tracked.&amp;#39;&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">end&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">use&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">router&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">console&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">log&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;http://localhost:8080/test&amp;#34;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">app&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">listen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">process&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">env&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">PORT&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="mi">8080&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="step-5-create-a-postman-test-collection-continued">Step 5: Create a Postman Test Collection (continued)&lt;/h2>
+&lt;ul>
+&lt;li>Invalid request (for a movie not in the database) without the review query parameter&lt;/li>
+&lt;li>Valid request with the review query parameter (e.g &lt;code>reviews=true&lt;/code> on the &lt;code>/movies/:id&lt;/code> route)&lt;/li>
+&lt;li>Valid save review method that associates a review with a movie (save a review for a movie in your DB)&lt;/li>
+&lt;li>Invalid save review (movie missing from DB)&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-6-write-the-code">Step 6: Write the Code&lt;/h2>
+&lt;p>Write the code that fulfills all the requirements mentioned in this assignment.&lt;/p>
+&lt;h2 id="step-7-deployment">Step 7: Deployment&lt;/h2>
+&lt;p>Deploy your API on Heroku or Render. Make sure your MongoDB database is also accessible from your deployed API.&lt;/p>
+&lt;h2 id="step-8-create-a-readme-file">Step 8: Create a README file&lt;/h2>
+&lt;p>Create a README.md file at the root of your GitHub repository that includes the following:&lt;/p>
+&lt;ul>
+&lt;li>Explanation of your project&lt;/li>
+&lt;li>Installation and usage instructions&lt;/li>
+&lt;li>Link to your Postman test collection&lt;/li>
+&lt;li>The environment settings&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-9-submit-your-work">Step 9: Submit your Work&lt;/h2>
+&lt;p>Submit the URL of your GitHub repository and the deployed API on the designated platform.&lt;/p>
+&lt;h1 id="rubric">Rubric&lt;/h1>
+&lt;ul>
+&lt;li>This assignment has an extra credit – code the custom analytics that correctly sends the movie name and attach a PDF or Excel report from Google Analytics you receive (+4)&lt;/li>
+&lt;li>-2 if missing reviews collection&lt;/li>
+&lt;li>-2 if missing query parameters &lt;code>?reviews=true&lt;/code> that returns reviews (should include both movie and reviews)&lt;/li>
+&lt;li>-1 for each test that is missing (valid request for movie with query parameter, valid save review, invalid movie request, invalid save review) – for max of (-4 for missing all tests)&lt;/li>
+&lt;li>-2 if you have to manually copy the JWT token to get their tests to run (versus saving it from the sign-in call)&lt;/li>
+&lt;li>Try changing the review data to enter a different review before submitting to validate new review are returned – if not (-1)&lt;/li>
+&lt;/ul>
+&lt;h1 id="resources">Resources&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/daxko/universal-ga" target="_blank" rel="noopener">Google Universal Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/custom-dims-mets" target="_blank" rel="noopener">Google Analytics Custom Dimensions and Metrics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://cloud.google.com/appengine/docs/flexible/nodejs/integrating-with-analytics" target="_blank" rel="noopener">Google Cloud Integration with Analytics&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://caolan.github.io/async/index.html" target="_blank" rel="noopener">Async.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://support.google.com/analytics/answer/2709829" target="_blank" rel="noopener">Google Analytics Support&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Assignment Three</title><link>https://mccarthy.phd/course/web-api/assignment3/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment3/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
 &lt;p>This assignment aims to enhance your understanding of NoSQL databases, particularly MongoDB. You will build a Users collection for storing user data and implement a signup and signin functionality. Additionally, you will also create a Movies collection to store movie information. All endpoints will be secured with JWT tokens obtained from successful signin operations.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ul>
@@ -545,7 +725,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-391426758" class="chart">&lt;/div>
+&lt;div id="chart-243581769" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -554,7 +734,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-391426758', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-243581769', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
