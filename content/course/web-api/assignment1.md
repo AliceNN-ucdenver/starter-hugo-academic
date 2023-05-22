@@ -1,9 +1,10 @@
 ---
 title: Assignment One
-date: '2024-01-01'
+date: '2023-05-01'
 type: book
 weight: 20
 ---
+
 # Assignment One
 ## Purpose
 The purpose of this assignment is to set up your GitHub and Render instances for future assignments. You will create an Echo server, setup auto-deployment on Render, and test the server using Postman.
