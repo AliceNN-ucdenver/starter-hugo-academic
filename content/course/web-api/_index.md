@@ -14,7 +14,7 @@ tags:
 
 # CSCI 3916: Web API Technologies
 ## Course Syllabus
-### Spring, 2023
+### Spring, 2024
 
 **Instructor:** Shawn McCarthy  
 **Email:** shawn.mccarthy@ucdenver.edu  
@@ -51,22 +51,22 @@ tags:
 ## Course Outline:
 | Lecture/Week | Date | Topic | Reading | Assignments |
 |---|---|---|---|---|
-| 1 | Jan 18th | GitHub, PostMan | MERN: Chapter 1 MERN Setup, Full Stack: Preparing the Development Environment, [Link](https://youtu.be/vUcRYyWh2Yg) | |
-| 2 | Jan 23rd | HTTP | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Hw0 Due Jan 29th |
-| 3 | Jan 30th | ES6/JavaScript, Heroku, Pick Teams | [The Modern JavaScript Tutorial](https://javascript.info/) | Hw1 Due Feb 5th |
-| 4 | Feb 6th | NodeJS, Authorization, Basic Auth, oAuth | Full Stack: Auth with JWT | |
-| 5 | Feb 13th | Swagger, Node Security, Unit Testing, Pre-React | [Getting Started with React](https://react.dev/learn) - Quick Start and Tutorial | |
-| 6 | Feb 20th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | Hw2 Due Feb 26th |
-| 7 | Feb 27th | MongoDB | Full Stack: Building a Backend with MongoDB | |
-| 8 | Mar 6th | API Management, TypeScript | | Hw3 Due Mar 12th |
-| 9 | Mar 14th | Analytics, Code Smells (Spec topic) | [YouTube](https://youtu.be/JVlfj7mQZPo) | |
-| 10 | Mar 20th | Spring Break | | |
-| 11 | Mar 27th | CSS | | Hw4 Due Apr 2nd |
-| 12 | Apr 3rd | React Movie, Patterns (Spec Topic) | | |
-| 13 | Apr 10th | React | | Hw5 Due Apr 16th |
-| 14 | Apr 17th | Mobile, Monetization | | |
-| 15 | April 24th | Project Days | | |
-| 16 | May 1st | Project Presentations | | |
+| 1 | Jan 17th | GitHub, PostMan | MERN: Chapter 1 MERN Setup, Full Stack: Preparing the Development Environment, [Link](https://youtu.be/vUcRYyWh2Yg) | |
+| 2 | Jan 22nd | HTTP | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Hw0 Due Jan 28th |
+| 3 | Jan 29th | ES6/JavaScript, Heroku, Pick Teams | [The Modern JavaScript Tutorial](https://javascript.info/) | Hw1 Due Feb 4th |
+| 4 | Feb 5th | NodeJS, Authorization, Basic Auth, oAuth | Full Stack: Auth with JWT | |
+| 5 | Feb 12th | Swagger, Node Security, Unit Testing, Pre-React | [Getting Started with React](https://react.dev/learn) - Quick Start and Tutorial | |
+| 6 | Feb 19th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | Hw2 Due Feb 25th |
+| 7 | Feb 26th | MongoDB | Full Stack: Building a Backend with MongoDB | |
+| 8 | Mar 4th | API Management, TypeScript | | Hw3 Due Mar 10th |
+| 9 | Mar 11th | Analytics, Code Smells (Spec topic) | [YouTube](https://www.youtube.com/watch?v=KGsnhdcBvd0) | |
+| 10 | Mar 18th | Spring Break | | |
+| 11 | Mar 25th | CSS | | Hw4 Due Mar 31st |
+| 12 | Apr 1st | React Movie, Patterns (Spec Topic) | | |
+| 13 | Apr 8th | React | | Hw5 Due Apr 14th |
+| 14 | Apr 15th | Mobile, Monetization | | |
+| 15 | April 22nd | Project Days | | |
+| 16 | April 29th | Project Presentations | | |
 
 **Grading Policy:**
 - Homework: 65%
