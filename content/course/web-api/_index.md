@@ -52,11 +52,11 @@ tags:
 | Lecture/Week | Date | Topic | Reading | Assignments |
 |---|---|---|---|---|
 | 1 | Jan 17th | GitHub, PostMan | MERN: Chapter 1 MERN Setup, Full Stack: Preparing the Development Environment, [Link](https://youtu.be/vUcRYyWh2Yg) | |
-| 2 | Jan 22nd | HTTP | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Hw0 Due Jan 28th |
-| 3 | Jan 29th | ES6/JavaScript, Heroku, Pick Teams | [The Modern JavaScript Tutorial](https://javascript.info/) | Hw1 Due Feb 4th |
+| 2 | Jan 22nd | HTTP | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | {{< cta cta_text="Hw0" cta_link="assignment0" >}} Due Jan 28th  |
+| 3 | Jan 29th | ES6/JavaScript, Heroku, Pick Teams | [The Modern JavaScript Tutorial](https://javascript.info/) | {{< cta cta_text="Hw1" cta_link="assignment1" >}} Due Feb 4th |
 | 4 | Feb 5th | NodeJS, Authorization, Basic Auth, oAuth | Full Stack: Auth with JWT | |
 | 5 | Feb 12th | Swagger, Node Security, Unit Testing, Pre-React | [Getting Started with React](https://react.dev/learn) - Quick Start and Tutorial | |
-| 6 | Feb 19th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | Hw2 Due Feb 25th |
+| 6 | Feb 19th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | {{< cta cta_text="Hw2" cta_link="assignment2" >}} Due Feb 25th |
 | 7 | Feb 26th | MongoDB | Full Stack: Building a Backend with MongoDB | |
 | 8 | Mar 4th | API Management, TypeScript | | Hw3 Due Mar 10th |
 | 9 | Mar 11th | Analytics, Code Smells (Spec topic) | [YouTube](https://www.youtube.com/watch?v=KGsnhdcBvd0) | |
@@ -99,4 +99,3 @@ There are no prerequisites for the first course.
 Continuously, at your own pace.
 {{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="assignment0" >}}
