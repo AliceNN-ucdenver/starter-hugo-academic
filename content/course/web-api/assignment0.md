@@ -101,8 +101,8 @@ In this assignment, you will familiarize yourself with **Postman**, **HTTP**, an
 
 ## Resources
 
-- [Creating a Test in Postman (YouTube Video)](https://www.youtube.com/watch?v=vhYD3G1QlEo)
-- [Sharing a Live Version in Postman (YouTube Video)](https://www.youtube.com/watch?v=jmzp0oJ2O1U)
+- [How to write tests in Postman (YouTube Video)](https://www.youtube.com/watch?v=ycbil-gaoS8)
+- [How to share a postman via run in postman markdown](https://www.youtube.com/watch?v=b9VlFDlwKvI)
 - [Postman Learning Center: Writing tests](https://learning.postman.com/docs/writing-scripts/test-scripts/)
 - [Postman Learning Center: Sharing collections](https://learning.postman.com/docs/collaborating-in-postman/sharing/)
 

@@ -71,8 +71,9 @@ The purpose of this assignment is to set up your GitHub and Render instances for
 - [Node.js](http://nodejs.org)
 - [Passport.js Documentation - Basic Digest](http://www.passportjs.org/docs/basic-digest/)
 - [Render Documentation - Deploy Node.js & Express.js app](https://render.com/docs/deploy-node-express-app)
-- [Creating an Echo Server in Node.js (YouTube Video)](https://www.youtube.com/watch?v=YUZGfjc9aLk)
-- [How to write tests in Postman (YouTube Video)](https://www.youtube.com/watch?v=vhYD3G1QlEo)
+- [Creating an Echo Server in Node.js (YouTube Video)](https://www.youtube.com/watch?v=K82bKznm3lU)
+- [Deploy on render (YouTub Video)](https://www.youtube.com/watch?v=bnCOyGaSe84) 
+- [How to write tests in Postman (YouTube Video)](https://www.youtube.com/watch?v=ycbil-gaoS8)
 
 Replace "your-collection-id" with the actual ID of your collection.
 
