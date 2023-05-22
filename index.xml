@@ -184,6 +184,119 @@
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
+&lt;/a>&lt;/p></description></item><item><title>Assignment Two</title><link>https://mccarthy.phd/course/web-api/assignment2/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment2/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>Basic knowledge of JavaScript&lt;/li>
+&lt;li>Basic knowledge of Node.js&lt;/li>
+&lt;li>Node.js installed on your local machine&lt;/li>
+&lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
+&lt;li>Access to the &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment2" target="_blank" rel="noopener">Base Repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-by-step-guide">Step-by-step Guide&lt;/h2>
+&lt;p>&lt;strong>1. Clone the Base Repository&lt;/strong>&lt;/p>
+&lt;p>Clone the base repository located at &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment2" target="_blank" rel="noopener">https://github.com/AliceNN-ucdenver/CSC3916_Assignment2&lt;/a> and create your own repository; GitHub classroom will do this when you accept the assigment&lt;/p>
+&lt;p>&lt;strong>2. Create Environment Variable&lt;/strong>&lt;/p>
+&lt;p>Create an environment variable UNIQUE_KEY and set it to a unique value.&lt;/p>
+&lt;ul>
+&lt;li>For local development, create a .env file (this file should be .gitignored and not stored in your repository).&lt;/li>
+&lt;li>Create the environment variable on Heroku or Render for your app.&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>3. Install Required Packages&lt;/strong>&lt;/p>
+&lt;p>Ensure that you have installed all required packages such as &lt;code>express&lt;/code>, &lt;code>http&lt;/code>, &lt;code>body-parser&lt;/code>, &lt;code>passport&lt;/code>, &lt;code>cors&lt;/code>, and &lt;code>jsonwebtoken&lt;/code>.&lt;/p>
+&lt;p>&lt;strong>4. Create Routes for Signup and Signin&lt;/strong>&lt;/p>
+&lt;p>Create two routes, &lt;code>/signup&lt;/code> and &lt;code>/signin&lt;/code>, to handle user registration and login. The scaffolding project contains implementation of these methods for you&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">router&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/signup&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Implementation here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">router&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">post&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/signin&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Implementation here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>5. Update &lt;code>/movies&lt;/code> Route&lt;/strong>&lt;/p>
+&lt;p>Update the &lt;code>/movies&lt;/code> route in your &lt;code>server.js&lt;/code> to handle GET, POST, PUT, and DELETE requests.&lt;/p>
+&lt;ul>
+&lt;li>HTTP Method: GET should return &lt;code>{ status: 200, message: ‘GET movies”, headers: headers: header from request, query: query string from request, env: your unique key }&lt;/code>&lt;/li>
+&lt;li>HTTP Method: POST should return &lt;code>{“status”: 200, message: “movie saved”, headers: headers: header from request, query: query string from request, env: your unique key }&lt;/code>&lt;/li>
+&lt;li>HTTP Method: PUT should return &lt;code>{“status: 200, message: “movie updated”, headers: headers: header from request, query: query string from request , env: your unique key }&lt;/code>
+&lt;ul>
+&lt;li>PUT should require authentication (JWT Auth)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>HTTP Method: DELETE should return &lt;code>{“status: 200, message: “movie deleted”, headers: headers: header from request, query: query string from request, env: your unique key }&lt;/code>
+&lt;ul>
+&lt;li>Delete should require authentication (Basic Auth)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>All other methods should return error (e.g. PATCH) - it should respond with a simple statement saying it doesn’t support the HTTP method.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">router&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">route&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;/movies&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">get&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Implementation here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">post&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Implementation here
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">put&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">authJwtController&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">isAuthenticated&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// HTTP PUT Method
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Requires JWT authentication.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Returns a JSON object with status, message, headers, query, and env.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">o&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">getJSONObjectForMovieRequirement&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">o&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">200&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">o&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">message&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;movie updated&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">o&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="k">delete&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">authController&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">isAuthenticated&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// HTTP DELETE Method
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Requires Basic authentication.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Returns a JSON object with status, message, headers, query, and env.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">o&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">getJSONObjectForMovieRequirement&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">o&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">200&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">o&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">message&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;movie deleted&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">o&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">})&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">.&lt;/span>&lt;span class="nx">all&lt;/span>&lt;span class="p">((&lt;/span>&lt;span class="nx">req&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">=&amp;gt;&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Any other HTTP Method
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// Returns a message stating that the HTTP method is unsupported.
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">res&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">405&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">send&lt;/span>&lt;span class="p">({&lt;/span> &lt;span class="nx">message&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;HTTP method not supported.&amp;#39;&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>6. Test Your Endpoints&lt;/strong>&lt;/p>
+&lt;p>Test your endpoints with Postman. For each of the routes (GET, POST, PUT, DELETE), you should have tests that:&lt;/p>
+&lt;ul>
+&lt;li>Include valid requests, as well as requests that fail (e.g., missing authentication, sending an incorrect HTTP verb).&lt;/li>
+&lt;li>Include tests with BasicAuth set to the correct username/password and sets with wrong password.&lt;/li>
+&lt;li>Include tests that sign in and retrieve the JWT token that is then used to call the PUT method on /movies.&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s a hint on how you can do this in Postman:&lt;/p>
+&lt;ul>
+&lt;li>For the sign-in test, create a request and store the token in the environment. Then use that token to call the PUT method on /movies.&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kd">var&lt;/span> &lt;span class="nx">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">JSON&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">parse&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">responseBody&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">postman&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">setEnvironmentVariable&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;token&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">data&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">token&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>7. Share Your Postman Project&lt;/strong>&lt;/p>
+&lt;p>Share your Postman project by creating a Postman Collection, running all the tests in the collection, and generating a public link to the collection.&lt;/p>
+&lt;p>&lt;strong>8. Create README.md and Submit the Assignment&lt;/strong>&lt;/p>
+&lt;p>Create a &lt;code>readme.md&lt;/code> at the root of your GitHub repository with the embedded link to your Postman collection. Submit the URL of your repository to the CSC_3916 assignment on Canvas.&lt;/p>
+&lt;hr>
+&lt;p>Remember to make sure that your API is deployed to Heroku or Render and that your Postman tests are testing against this endpoint.&lt;/p>
+&lt;h2 id="rubric">Rubric&lt;/h2>
+&lt;ul>
+&lt;li>-1 missing unique key&lt;/li>
+&lt;li>-1 basic auth not included&lt;/li>
+&lt;li>-1 JWT auth missing&lt;/li>
+&lt;li>-2 movies route issues (not responding with correct response)&lt;/li>
+&lt;li>-2 missing postman requirements (-1 if just a minor miss)&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://nodejs.org" target="_blank" rel="noopener">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.passportjs.org/docs/basic-digest/" target="_blank" rel="noopener">Passport.js Documentation - Basic Digest&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://render.com/docs/deploy-node-express-app" target="_blank" rel="noopener">Render Documentation - Deploy Node.js &amp;amp; Express.js app&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://app.getpostman.com/run-collection/1e37a1a45fd828a9cb10" target="_blank" rel="noopener">
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
 &lt;/a>&lt;/p></description></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
 &lt;p>&lt;strong>Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong>&lt;/p>
 &lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p>
@@ -275,7 +388,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-327648159" class="chart">&lt;/div>
+&lt;div id="chart-768953241" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -284,7 +397,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-327648159', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-768953241', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
