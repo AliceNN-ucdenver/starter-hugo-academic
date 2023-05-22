@@ -58,7 +58,7 @@ tags:
 | 5 | Feb 12th | Swagger, Node Security, Unit Testing, Pre-React | [Getting Started with React](https://react.dev/learn) - Quick Start and Tutorial | |
 | 6 | Feb 19th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | {{< cta cta_text="Hw2" cta_link="assignment2" >}} Due Feb 25th |
 | 7 | Feb 26th | MongoDB | Full Stack: Building a Backend with MongoDB | |
-| 8 | Mar 4th | API Management, TypeScript | | Hw3 Due Mar 10th |
+| 8 | Mar 4th | API Management, TypeScript | | {{< cta cta_text="Hw3" cta_link="assignment3" >}} Due Mar 10th |
 | 9 | Mar 11th | Analytics, Code Smells (Spec topic) | [YouTube](https://www.youtube.com/watch?v=KGsnhdcBvd0) | |
 | 10 | Mar 18th | Spring Break | | |
 | 11 | Mar 25th | CSS | | Hw4 Due Mar 31st |

@@ -5,6 +5,13 @@ type: book
 weight: 30
 ---
 
+## Purpose
+The purpose of this assignment is to start working with Node.js and become more familiar with HTTP requests.
+
+You will create a standard Node.js server to handle incoming HTTP requests and then respond with information about the request. The server should be able to read incoming header and query parameters and include this information in the response. The server should also only accept certain incoming requests and block others.
+
+You may use any of the standard packages included in Node.js or any third-party packages to complete this assignment.
+
 ## Prerequisites
 
 - Basic knowledge of JavaScript
@@ -19,6 +26,26 @@ weight: 30
 
 Clone the base repository located at [https://github.com/AliceNN-ucdenver/CSC3916_Assignment2](https://github.com/AliceNN-ucdenver/CSC3916_Assignment2) and create your own repository; GitHub classroom will do this when you accept the assigment
 
+The scaffolding project contains the method to help you create the JSON object required for the HTTP response
+```javascript
+function getJSONObjectForMovieRequirement(req) {
+    var json = {
+        headers: "No headers",
+        key: process.env.UNIQUE_KEY,
+        body: "No body"
+    };
+
+    if (req.body != null) {
+        json.body = req.body;
+    }
+
+    if (req.headers != null) {
+        json.headers = req.headers;
+    }
+
+    return json;
+}
+```
 **2. Create Environment Variable**
 
 Create an environment variable UNIQUE_KEY and set it to a unique value.
