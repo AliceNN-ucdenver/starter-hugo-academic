@@ -12,7 +12,7 @@ The objective of this assignment is to create a React Single Page Application th
 ## Pre-Requirements
 - Completion and deployment of Assignment 3 (React app supporting SignUp and Logon)
 - Completion and deployment of Assignment 4 (API supporting reviews)
-- Source code from [REACT](https://github.com/AliceNN-ucdenver/CSC3916_REACT)
+- Source code from [REACT](https://github.com/AliceNN-ucdenver/CSC3916_REACT) from earlier assignment3
 
 ## Detailed Steps
 
@@ -102,13 +102,6 @@ Movie.aggregate(aggregate).exec(function(err, doc) { ... });
   - Implement a movie search feature that displays results in a grid or accordion.
   - For this, add a Search API (HTTP POST) to the API that can accept partial movie names or partial actor names.
   - [Beginning MERN Stack: Build and Deploy a Full Stack MongoDB, Express, React, Node.js App](https://www.amazon.com/dp/B0979MGJ5J?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_M9YGPJNZWB3BK0P59QX3)
-
-## Submissions
-
-Ensure your application meets the following criteria:
-
-- User is able to Sign-up (name, username, password)
-- User is able to Log
 
 ## Step 4: Deployment
 

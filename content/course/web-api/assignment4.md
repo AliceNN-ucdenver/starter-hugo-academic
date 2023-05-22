@@ -18,7 +18,8 @@ The purpose of this assignment is to leverage Google’s analytics policies to g
 - Postman for testing APIs
 - Git and GitHub for version control
 - Basic knowledge of deployment to Heroku or Render
-- Source code from [Assignment 3](https://github.com/AliceNN-ucdenver/CSC3916_Assignment4)
+- Source code from Assignment3 
+- GitHub Classroom will clone the repository [CSC3916_Assignment4](https://github.com/AliceNN-ucdenver/CSC3916_Assignment4) for you into your GitHub Classroom repository.
 
 ## Step 1: Create a new Collection for Reviews
 In your MongoDB database, create a new collection named `Reviews` to hold reviews about movies. Each review should contain the following fields:

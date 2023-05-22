@@ -14,7 +14,7 @@ This assignment aims to enhance your understanding of NoSQL databases, particula
 - Basic knowledge of Node.js
 - Node.js installed on your local machine
 - Access to [GitHub Classroom](https://classroom.github.com/classrooms)
-- Access to the [Base Repository](https://github.com/AliceNN-ucdenver/CSC3916_Assignment3)
+- GitHub Classroom will clone the repository [CSC3916_Assignment3](https://github.com/AliceNN-ucdenver/CSC3916_Assignment3) for you into your GitHub Classroom repository.
 
 ## Steps
 
