@@ -5,8 +5,6 @@ type: book
 weight: 40
 ---
 
-# CSC3916 Assignment 3
-
 ## Purpose
 This assignment aims to enhance your understanding of NoSQL databases, particularly MongoDB. You will build a Users collection for storing user data and implement a signup and signin functionality. Additionally, you will also create a Movies collection to store movie information. All endpoints will be secured with JWT tokens obtained from successful signin operations.
 
