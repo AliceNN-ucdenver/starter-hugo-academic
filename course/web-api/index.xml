@@ -327,7 +327,7 @@
 &lt;li>Basic knowledge of Node.js&lt;/li>
 &lt;li>Node.js installed on your local machine&lt;/li>
 &lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
-&lt;li>Access to the &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">Base Repository&lt;/a>&lt;/li>
+&lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">CSC3916_Assignment3&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">Steps&lt;/h2>
 &lt;p>&lt;strong>Step 1: Create MongoDB Movie and User Collections&lt;/strong>&lt;/p>
@@ -464,7 +464,8 @@ Movie "*" -- "3" Actor : contains
 &lt;li>Postman for testing APIs&lt;/li>
 &lt;li>Git and GitHub for version control&lt;/li>
 &lt;li>Basic knowledge of deployment to Heroku or Render&lt;/li>
-&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment4" target="_blank" rel="noopener">Assignment 3&lt;/a>&lt;/li>
+&lt;li>Source code from Assignment3&lt;/li>
+&lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment4" target="_blank" rel="noopener">CSC3916_Assignment4&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;/ul>
 &lt;h2 id="step-1-create-a-new-collection-for-reviews">Step 1: Create a new Collection for Reviews&lt;/h2>
 &lt;p>In your MongoDB database, create a new collection named &lt;code>Reviews&lt;/code> to hold reviews about movies. Each review should contain the following fields:&lt;/p>
@@ -640,7 +641,7 @@ class Review {
 &lt;ul>
 &lt;li>Completion and deployment of Assignment 3 (React app supporting SignUp and Logon)&lt;/li>
 &lt;li>Completion and deployment of Assignment 4 (API supporting reviews)&lt;/li>
-&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">REACT&lt;/a>&lt;/li>
+&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">REACT&lt;/a> from earlier assignment3&lt;/li>
 &lt;/ul>
 &lt;h2 id="detailed-steps">Detailed Steps&lt;/h2>
 &lt;h3 id="1-updating-api-to-include-movie-images">1. Updating API to Include Movie Images&lt;/h3>
@@ -738,12 +739,6 @@ class Review {
 &lt;li>&lt;a href="https://www.amazon.com/dp/B0979MGJ5J?_encoding=UTF8&amp;amp;psc=1&amp;amp;ref_=cm_sw_r_cp_ud_dp_M9YGPJNZWB3BK0P59QX3" target="_blank" rel="noopener">Beginning MERN Stack: Build and Deploy a Full Stack MongoDB, Express, React, Node.js App&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul>
-&lt;h2 id="submissions">Submissions&lt;/h2>
-&lt;p>Ensure your application meets the following criteria:&lt;/p>
-&lt;ul>
-&lt;li>User is able to Sign-up (name, username, password)&lt;/li>
-&lt;li>User is able to Log&lt;/li>
 &lt;/ul>
 &lt;h2 id="step-4-deployment">Step 4: Deployment&lt;/h2>
 &lt;ul>
