@@ -1,4 +1,4 @@
-# Assignment Zero - Detailed Steps
+# Assignment Zero
 
 ## Purpose
 
