@@ -319,7 +319,141 @@
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/a>&lt;/p></description></item><item><title>Assignment Four</title><link>https://mccarthy.phd/course/web-api/assignment4/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment4/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;/a>&lt;/p></description></item><item><title>Assignment Three</title><link>https://mccarthy.phd/course/web-api/assignment3/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment3/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>This assignment aims to enhance your understanding of NoSQL databases, particularly MongoDB. You will build a Users collection for storing user data and implement a signup and signin functionality. Additionally, you will also create a Movies collection to store movie information. All endpoints will be secured with JWT tokens obtained from successful signin operations.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ul>
+&lt;li>Basic knowledge of JavaScript&lt;/li>
+&lt;li>Basic knowledge of Node.js&lt;/li>
+&lt;li>Node.js installed on your local machine&lt;/li>
+&lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
+&lt;li>Access to the &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">Base Repository&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;p>&lt;strong>Step 1: Create MongoDB Movie and User Collections&lt;/strong>&lt;/p>
+&lt;p>Create two MongoDB collections to store movie and user information.&lt;/p>
+&lt;p>Movie Collection Schema:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">MovieSchema&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">title&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">required&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">index&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">releaseDate&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">genre&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">enum&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s1">&amp;#39;Action&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Adventure&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Comedy&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Drama&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Fantasy&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Horror&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Mystery&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Thriller&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Western&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Science Fiction&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">actors&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">actorName&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">characterName&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>User Collection Schema (this is provided to you in the scaffolding project):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">UserSchema&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">({&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">username&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">unique&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">password&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// this should be hashed in real-world scenario
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Ensure that your Movies collection contains at least five movies.&lt;/p>
+&lt;p>&lt;strong>Step 2: NodeJS Web API&lt;/strong>&lt;/p>
+&lt;p>Create a NodeJS Web API to interact with your MongoDB database. This API should adhere to best practices, including having a separate route for each collection (e.g., &lt;code>/movies&lt;/code>). The API should support all CRUD operations (GET, POST, PUT, DELETE).&lt;/p>
+&lt;p>Ensure that incoming entities contain the necessary information. If a movie does not contain actors, for instance, the entity should not be created and an error should be returned instead.&lt;/p>
+&lt;p>&lt;strong>Step 3: User Authentication and JWT Token&lt;/strong>&lt;/p>
+&lt;p>Implement JWT authentication for all your endpoints. To achieve this, you must also implement a User collection in MongoDB, each user document should include:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>name&lt;/code> (String)&lt;/li>
+&lt;li>&lt;code>username&lt;/code> (String, unique)&lt;/li>
+&lt;li>&lt;code>password&lt;/code> (String, hashed)&lt;/li>
+&lt;/ul>
+&lt;p>If a user tries to sign up with a username that already exists, return an error message stating that the user already exists.&lt;/p>
+&lt;p>Remember to store your JWT secret key in an environment variable.&lt;/p>
+&lt;p>&lt;strong>Step 4: Implement Signup and Signin in the Frontend&lt;/strong>&lt;/p>
+&lt;p>Update the existing pre-react CSC3916_REACT project to support &lt;code>/signup&lt;/code> and &lt;code>/signin&lt;/code> operations. The React Single Page App should interact with your Assignment 3 API for these operations.&lt;/p>
+&lt;p>&lt;strong>Step 5: Deploy Frontend to Static Site Service&lt;/strong>&lt;/p>
+&lt;p>Deploy your updated React app to a static site hosting service, such as Render or Netlify. Make sure to set any necessary environment variables (such as API URLs) in the hosting service&amp;rsquo;s settings.&lt;/p>
+&lt;h2 id="mermaid-entity-relation-diagram">Mermaid Entity Relation Diagram&lt;/h2>
+&lt;div class="mermaid">classDiagram
+class Movie{
++String title
++Date releaseDate
++String genre
++Array actors
+}
+class Actor{
++String actorName
++String characterName
+}
+class User{
++String name
++String username
++String password
+}
+Movie "*" -- "3" Actor : contains
+&lt;/div>
+&lt;p>#Route Details&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Route&lt;/th>
+&lt;th>GET&lt;/th>
+&lt;th>POST&lt;/th>
+&lt;th>PUT&lt;/th>
+&lt;th>DELETE&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>movies&lt;/td>
+&lt;td>Return all movies&lt;/td>
+&lt;td>save a single movie&lt;/td>
+&lt;td>FAIL&lt;/td>
+&lt;td>FAIL&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>movies/:movieparameter&lt;/td>
+&lt;td>Return a specific movie based on the :movieparameter&lt;/td>
+&lt;td>FAIL&lt;/td>
+&lt;td>Update the specific movie based on the :movieparameter in your case it’s the title&lt;/td>
+&lt;td>Delete the specific movie based on the :movieparamters your case it’s the title&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>If Query String (Later Homework) reviews=true aggregate in reviews&lt;/li>
+&lt;/ul>
+&lt;p>Sorry for the interruption, here&amp;rsquo;s the completed markdown:&lt;/p>
+&lt;h2 id="submissions">Submissions&lt;/h2>
+&lt;ul>
+&lt;li>All source code should be hosted on GitHub. Remember to exclude the &lt;code>node_modules&lt;/code> directory using a &lt;code>.gitignore&lt;/code> file.&lt;/li>
+&lt;li>Your API should be deployed to either Heroku or Render.&lt;/li>
+&lt;li>A Postman collection including the following tests:
+&lt;ul>
+&lt;li>Signup a user (create a random username and password in your pre-test)&lt;/li>
+&lt;li>Signin a user – parse the returned JWT token and store it as a Postman environment variable&lt;/li>
+&lt;li>Separate requests for each endpoint (save a movie, update a movie, delete a movie, and get a movie)&lt;/li>
+&lt;li>Test error conditions (e.g., user already exists, movie missing required information)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Create a &lt;code>readme.md&lt;/code> file at the root of your GitHub repository. Embed your Postman collection using markdown.&lt;/li>
+&lt;li>Submit the URL of your GitHub repository to the CSC_3916 assignment on Canvas.&lt;/li>
+&lt;/ul>
+&lt;p>Note: All tests should target your Heroku or Render endpoint.&lt;/p>
+&lt;h2 id="rubric">Rubric&lt;/h2>
+&lt;ul>
+&lt;li>-5 for missing REACT site (-2 if you are not able to signup or signin on the react site) that is all we implemented&lt;/li>
+&lt;li>-1 for MovieSchema missing any of the attributes (array of actors, genre, year released, or title)&lt;/li>
+&lt;li>-2 for missing routes for /movies (POST/PUT/DELETE/GET)&lt;/li>
+&lt;li>-1 for missing authentication on routes&lt;/li>
+&lt;li>-2 for not deployed on Heroku/Render&lt;/li>
+&lt;li>-1 missing test error conditions&lt;/li>
+&lt;li>-1 missing PostMan tests (signup, signin, separate call for each route)&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.mongodb.com/cloud/atlas" target="_blank" rel="noopener">MongoDB Cloud Atlas&lt;/a>&lt;/li>
+&lt;li>Create a Free Subscription on Amazon Web Services&lt;/li>
+&lt;li>&lt;a href="https://render.com/docs/deploy-create-react-app" target="_blank" rel="noopener">Render Documentation for Deploying a Create-React-App&lt;/a>&lt;/li>
+&lt;li>Important: Remember to set the Environment Variable for &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">https://github.com/AliceNN-ucdenver/CSC3916_REACT&lt;/a> &lt;code>env.REACT_APP_API_URL&lt;/code>&lt;/li>
+&lt;/ul></description></item><item><title>Assignment Four</title><link>https://mccarthy.phd/course/web-api/assignment4/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment4/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
 &lt;p>Using the information already entered to MongoDB for the previous assignment, you will add another collection of reviews that are tied to the movies. This way users can query the database and get the previous information (title, year released and actors) as well as the reviews.&lt;/p>
 &lt;p>The purpose of this assignment is to leverage Google’s analytics policies to gather information about the requests being sent in by users.&lt;/p>
 &lt;h2 id="pre-requisites">Pre-requisites&lt;/h2>
@@ -500,138 +634,139 @@ class Review {
 &lt;li>&lt;a href="https://cloud.google.com/appengine/docs/flexible/nodejs/integrating-with-analytics" target="_blank" rel="noopener">Google Cloud Integration with Analytics&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://caolan.github.io/async/index.html" target="_blank" rel="noopener">Async.js&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://support.google.com/analytics/answer/2709829" target="_blank" rel="noopener">Google Analytics Support&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Assignment Three</title><link>https://mccarthy.phd/course/web-api/assignment3/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment3/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
-&lt;p>This assignment aims to enhance your understanding of NoSQL databases, particularly MongoDB. You will build a Users collection for storing user data and implement a signup and signin functionality. Additionally, you will also create a Movies collection to store movie information. All endpoints will be secured with JWT tokens obtained from successful signin operations.&lt;/p>
-&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;/ul></description></item><item><title>Assignment Five</title><link>https://mccarthy.phd/course/web-api/assignment5/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment5/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>The objective of this assignment is to create a React Single Page Application that interacts with your previously developed API. The application will enable users to search for movies, display information about a selected movie, view stored ratings, and submit a new rating for a movie.&lt;/p>
+&lt;h2 id="pre-requirements">Pre-Requirements&lt;/h2>
 &lt;ul>
-&lt;li>Basic knowledge of JavaScript&lt;/li>
-&lt;li>Basic knowledge of Node.js&lt;/li>
-&lt;li>Node.js installed on your local machine&lt;/li>
-&lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
-&lt;li>Access to the &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">Base Repository&lt;/a>&lt;/li>
+&lt;li>Completion and deployment of Assignment 3 (React app supporting SignUp and Logon)&lt;/li>
+&lt;li>Completion and deployment of Assignment 4 (API supporting reviews)&lt;/li>
+&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">REACT&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;h2 id="steps">Steps&lt;/h2>
-&lt;p>&lt;strong>Step 1: Create MongoDB Movie and User Collections&lt;/strong>&lt;/p>
-&lt;p>Create two MongoDB collections to store movie and user information.&lt;/p>
-&lt;p>Movie Collection Schema:&lt;/p>
+&lt;h2 id="detailed-steps">Detailed Steps&lt;/h2>
+&lt;h3 id="1-updating-api-to-include-movie-images">1. Updating API to Include Movie Images&lt;/h3>
+&lt;ul>
+&lt;li>Expand your MongoDB movie collection by adding a new attribute to store the URL of a movie&amp;rsquo;s image.&lt;/li>
+&lt;li>Update your &lt;code>Movie&lt;/code> schema in Mongoose accordingly:&lt;/li>
+&lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">MovieSchema&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">({&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">title&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">required&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">index&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="p">},&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">releaseDate&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">genre&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">enum&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s1">&amp;#39;Action&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Adventure&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Comedy&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Drama&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Fantasy&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Horror&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Mystery&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Thriller&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Western&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Science Fiction&amp;#39;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">],&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">actors&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">actorName&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">characterName&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}],&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>User Collection Schema (this is provided to you in the scaffolding project):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">UserSchema&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">({&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">name&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">username&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">unique&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">password&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">// this should be hashed in real-world scenario
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">genre&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kr">enum&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">genres&lt;/span> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">actors&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nx">ActorSchema&lt;/span>&lt;span class="p">],&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">imageUrl&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// rest of your fields
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">});&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Ensure that your Movies collection contains at least five movies.&lt;/p>
-&lt;p>&lt;strong>Step 2: NodeJS Web API&lt;/strong>&lt;/p>
-&lt;p>Create a NodeJS Web API to interact with your MongoDB database. This API should adhere to best practices, including having a separate route for each collection (e.g., &lt;code>/movies&lt;/code>). The API should support all CRUD operations (GET, POST, PUT, DELETE).&lt;/p>
-&lt;p>Ensure that incoming entities contain the necessary information. If a movie does not contain actors, for instance, the entity should not be created and an error should be returned instead.&lt;/p>
-&lt;p>&lt;strong>Step 3: User Authentication and JWT Token&lt;/strong>&lt;/p>
-&lt;p>Implement JWT authentication for all your endpoints. To achieve this, you must also implement a User collection in MongoDB, each user document should include:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="2-securing-all-endpoints-with-jwt">2. Securing All Endpoints with JWT&lt;/h3>
 &lt;ul>
-&lt;li>&lt;code>name&lt;/code> (String)&lt;/li>
-&lt;li>&lt;code>username&lt;/code> (String, unique)&lt;/li>
-&lt;li>&lt;code>password&lt;/code> (String, hashed)&lt;/li>
+&lt;li>For this assignment, make sure all your API endpoints are protected with JWT authentication.&lt;/li>
 &lt;/ul>
-&lt;p>If a user tries to sign up with a username that already exists, return an error message stating that the user already exists.&lt;/p>
-&lt;p>Remember to store your JWT secret key in an environment variable.&lt;/p>
-&lt;p>&lt;strong>Step 4: Implement Signup and Signin in the Frontend&lt;/strong>&lt;/p>
-&lt;p>Update the existing pre-react CSC3916_REACT project to support &lt;code>/signup&lt;/code> and &lt;code>/signin&lt;/code> operations. The React Single Page App should interact with your Assignment 3 API for these operations.&lt;/p>
-&lt;p>&lt;strong>Step 5: Deploy Frontend to Static Site Service&lt;/strong>&lt;/p>
-&lt;p>Deploy your updated React app to a static site hosting service, such as Render or Netlify. Make sure to set any necessary environment variables (such as API URLs) in the hosting service&amp;rsquo;s settings.&lt;/p>
-&lt;h2 id="mermaid-entity-relation-diagram">Mermaid Entity Relation Diagram&lt;/h2>
-&lt;div class="mermaid">classDiagram
-class Movie{
-+String title
-+Date releaseDate
-+String genre
-+Array actors
-}
-class Actor{
-+String actorName
-+String characterName
-}
-class User{
-+String name
-+String username
-+String password
-}
-Movie "*" -- "3" Actor : contains
-&lt;/div>
-&lt;p>#Route Details&lt;/p>
-&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Route&lt;/th>
-&lt;th>GET&lt;/th>
-&lt;th>POST&lt;/th>
-&lt;th>PUT&lt;/th>
-&lt;th>DELETE&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>movies&lt;/td>
-&lt;td>Return all movies&lt;/td>
-&lt;td>save a single movie&lt;/td>
-&lt;td>FAIL&lt;/td>
-&lt;td>FAIL&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>movies/:movieparameter&lt;/td>
-&lt;td>Return a specific movie based on the :movieparameter&lt;/td>
-&lt;td>FAIL&lt;/td>
-&lt;td>Update the specific movie based on the :movieparameter in your case it’s the title&lt;/td>
-&lt;td>Delete the specific movie based on the :movieparamters your case it’s the title&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
+&lt;h3 id="3-implementing-user-interfaces">3. Implementing User Interfaces&lt;/h3>
 &lt;ul>
-&lt;li>If Query String (Later Homework) reviews=true aggregate in reviews&lt;/li>
-&lt;/ul>
-&lt;p>Sorry for the interruption, here&amp;rsquo;s the completed markdown:&lt;/p>
-&lt;h2 id="submissions">Submissions&lt;/h2>
+&lt;li>
+&lt;p>&lt;strong>User SignUp and Logon Interface&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>All source code should be hosted on GitHub. Remember to exclude the &lt;code>node_modules&lt;/code> directory using a &lt;code>.gitignore&lt;/code> file.&lt;/li>
-&lt;li>Your API should be deployed to either Heroku or Render.&lt;/li>
-&lt;li>A Postman collection including the following tests:
-&lt;ul>
-&lt;li>Signup a user (create a random username and password in your pre-test)&lt;/li>
-&lt;li>Signin a user – parse the returned JWT token and store it as a Postman environment variable&lt;/li>
-&lt;li>Separate requests for each endpoint (save a movie, update a movie, delete a movie, and get a movie)&lt;/li>
-&lt;li>Test error conditions (e.g., user already exists, movie missing required information)&lt;/li>
+&lt;li>Utilize your User MongoDB collection to facilitate the storage of new users.&lt;/li>
+&lt;li>Your React application should provide interfaces for users to sign up (with name, username, password) and log in (with username, password).&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;li>Create a &lt;code>readme.md&lt;/code> file at the root of your GitHub repository. Embed your Postman collection using markdown.&lt;/li>
-&lt;li>Submit the URL of your GitHub repository to the CSC_3916 assignment on Canvas.&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Main Screen&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Display the top-rated movies on the main screen of your React application.&lt;/li>
+&lt;li>Your GET &lt;code>/movies&lt;/code> endpoint should sort the results by average rating (server-side).
+&lt;ul>
+&lt;li>Update your &lt;code>/movies&lt;/code> (with &lt;code>reviews=true&lt;/code>) endpoint to sort by average rating in descending order.&lt;/li>
+&lt;li>Implement this feature in your API and consume this API in your React application to show the sorted movies.&lt;/li>
 &lt;/ul>
-&lt;p>Note: All tests should target your Heroku or Render endpoint.&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">aggregate&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$lookup&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">from&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;reviews&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">localField&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;_id&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">foreignField&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;movieId&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">as&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;movieReviews&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$addFields&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">avgRating&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">$avg&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;$movieReviews.rating&amp;#39;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$sort&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">avgRating&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Movie&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">aggregate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">aggregate&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">exec&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">docs&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">...&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>Movie Detail Screen&lt;/strong>
+&lt;ul>
+&lt;li>Design a movie detail screen that shows the Movie, Image, Actors in the movie, and the aggregated rating for the movie.&lt;/li>
+&lt;li>Use MongoDB&amp;rsquo;s aggregation framework to compute the average rating of reviews.&lt;/li>
+&lt;li>A grid should display the reviews (username, rating, review).&lt;/li>
+&lt;li>When a movie is selected from the main screen, the movie detail screen should be shown.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">aggregate&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$match&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">_id&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">movieId&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$lookup&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">from&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;reviews&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">localField&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;_id&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">foreignField&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;movieId&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">as&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;movieReviews&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">},&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">$addFields&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">avgRating&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">$avg&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;$movieReviews.rating&amp;#39;&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">Movie&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">aggregate&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">aggregate&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">exec&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kd">function&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">doc&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="p">...&lt;/span> &lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>&lt;strong>Extra Credit (7 points)&lt;/strong>
+&lt;ul>
+&lt;li>Implement a movie search feature that displays results in a grid or accordion.&lt;/li>
+&lt;li>For this, add a Search API (HTTP POST) to the API that can accept partial movie names or partial actor names.&lt;/li>
+&lt;li>&lt;a href="https://www.amazon.com/dp/B0979MGJ5J?_encoding=UTF8&amp;amp;psc=1&amp;amp;ref_=cm_sw_r_cp_ud_dp_M9YGPJNZWB3BK0P59QX3" target="_blank" rel="noopener">Beginning MERN Stack: Build and Deploy a Full Stack MongoDB, Express, React, Node.js App&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="submissions">Submissions&lt;/h2>
+&lt;p>Ensure your application meets the following criteria:&lt;/p>
+&lt;ul>
+&lt;li>User is able to Sign-up (name, username, password)&lt;/li>
+&lt;li>User is able to Log&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-4-deployment">Step 4: Deployment&lt;/h2>
+&lt;ul>
+&lt;li>Deploy your React application on a platform like Heroku, Render, Vercel, or Netlify.&lt;/li>
+&lt;li>Make sure the deployed application is able to communicate with your API.&lt;/li>
+&lt;/ul>
+&lt;h2 id="step-5-submission">Step 5: Submission&lt;/h2>
+&lt;ul>
+&lt;li>User is able to sign-up (name, username, password).&lt;/li>
+&lt;li>User is able to log in to the application (username, password).&lt;/li>
+&lt;li>User is able to see a list of movies and select a movie to see the detail screen (top-rated movies displayed).&lt;/li>
+&lt;li>User is able to enter a review on the detail page (enter a rating and comment) – the logged-in user’s username will be associated with the review (as captured from the JSON Web Token).&lt;/li>
+&lt;/ul>
 &lt;h2 id="rubric">Rubric&lt;/h2>
 &lt;ul>
-&lt;li>-5 for missing REACT site (-2 if you are not able to signup or signin on the react site) that is all we implemented&lt;/li>
-&lt;li>-1 for MovieSchema missing any of the attributes (array of actors, genre, year released, or title)&lt;/li>
-&lt;li>-2 for missing routes for /movies (POST/PUT/DELETE/GET)&lt;/li>
-&lt;li>-1 for missing authentication on routes&lt;/li>
-&lt;li>-2 for not deployed on Heroku/Render&lt;/li>
-&lt;li>-1 missing test error conditions&lt;/li>
-&lt;li>-1 missing PostMan tests (signup, signin, separate call for each route)&lt;/li>
+&lt;li>-3 Not able to add comments&lt;/li>
+&lt;li>-2 Not aggregating rating (average rating)&lt;/li>
+&lt;li>-3 if not pointed to the correct endpoint (e.g., HW4 endpoint)&lt;/li>
+&lt;li>-5 if you don’t have a React website deployed&lt;/li>
 &lt;/ul>
 &lt;h2 id="resources">Resources&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://www.mongodb.com/cloud/atlas" target="_blank" rel="noopener">MongoDB Cloud Atlas&lt;/a>&lt;/li>
-&lt;li>Create a Free Subscription on Amazon Web Services&lt;/li>
-&lt;li>&lt;a href="https://render.com/docs/deploy-create-react-app" target="_blank" rel="noopener">Render Documentation for Deploying a Create-React-App&lt;/a>&lt;/li>
-&lt;li>Important: Remember to set the Environment Variable for &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">https://github.com/AliceNN-ucdenver/CSC3916_REACT&lt;/a> &lt;code>env.REACT_APP_API_URL&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">Create React App&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/mars/create-react-app-buildpack#user-content-requires" target="_blank" rel="noopener">React Buildpack&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://mongoosejs.com/docs/api.html#aggregate_Aggregate" target="_blank" rel="noopener">Mongoose Aggregate&lt;/a>&lt;/li>
 &lt;/ul></description></item></channel></rss>
