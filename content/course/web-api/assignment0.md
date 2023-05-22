@@ -5,8 +5,6 @@ type: book
 weight: 10
 ---
 
-# Assignment Zero
-
 ## Purpose
 
 In this assignment, you will familiarize yourself with **Postman**, **HTTP**, and **REST** protocols using the Postman testing framework. You will also create your first node program and commit it to GitHub. Your task will be to create a Postman collection and automate REST tests within the project. Each test should include the required assertions.
