@@ -43,7 +43,7 @@ tags:
 **Textbook:** 
 - [Full-Stack React Projects](https://www.amazon.com/Full-Stack-React-Projects-development-building-ebook-dp-B085NZYZY4/dp/B085NZYZY4/ref=dp_ob_title_def)
 - [MERN Projects for Beginners](https://www.amazon.com/MERN-Projects-Beginners-MongoDB-Express-js-ebook-dp-B09GN6CJDL/dp/B09GN6CJDL/ref=mt_other?_encoding=UTF8&me=&qid=1638145208) (Only if you choose to do an individual project)
-- Optional: [Java for Beginners](https://www.amazon.com/dp/B0979MGJ5J?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_M9YGPJNZWB3BK0P59QX3)
+- Optional: [Beginning MERN Stack](https://www.amazon.com/dp/B0979MGJ5J?_encoding=UTF8&psc=1&ref_=cm_sw_r_cp_ud_dp_M9YGPJNZWB3BK0P59QX3)
 - Optional: [Learning JavaScript](https://www.amazon.com/Learning-JavaScript-Essentials-Application-Development-ebook/dp/B01BW3N906/ref=sr_1_4?s=digital-text&ie=UTF8&qid=1540525848&sr=1-4)
 
 **Topics:** Web APIs (Design, Best Practices and Development). JavaScript, NodeJS, TypeScript, React, MongoDB
@@ -52,10 +52,10 @@ tags:
 | Lecture/Week | Date | Topic | Reading | Assignments |
 |---|---|---|---|---|
 | 1 | Jan 18th | GitHub, PostMan | MERN: Chapter 1 MERN Setup, Full Stack: Preparing the Development Environment, [Link](https://youtu.be/vUcRYyWh2Yg) | |
-| 2 | Jan 23rd | HTTP | [Getting Started with JavaScript](https://www.better.dev/courses/getting-started-with-javascript) - Getting Started, JavaScript Foundations | Hw0 Due Jan 29th |
-| 3 | Jan 30th | ES6/JavaScript, Heroku, Pick Teams | [Getting Started with JavaScript](https://www.better.dev/courses/getting-started-with-javascript) - Building Real Things, Bookmarking App | Hw1 Due Feb 5th |
+| 2 | Jan 23rd | HTTP | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | Hw0 Due Jan 29th |
+| 3 | Jan 30th | ES6/JavaScript, Heroku, Pick Teams | [The Modern JavaScript Tutorial](https://javascript.info/) | Hw1 Due Feb 5th |
 | 4 | Feb 6th | NodeJS, Authorization, Basic Auth, oAuth | Full Stack: Auth with JWT | |
-| 5 | Feb 13th | Swagger, Node Security, Unit Testing, Pre-React | [Getting Started with React](https://www.better.dev/getting-started-with-react) - 16 minute read | |
+| 5 | Feb 13th | Swagger, Node Security, Unit Testing, Pre-React | [Getting Started with React](https://react.dev/learn) - Quick Start and Tutorial | |
 | 6 | Feb 20th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | Hw2 Due Feb 26th |
 | 7 | Feb 27th | MongoDB | Full Stack: Building a Backend with MongoDB | |
 | 8 | Mar 6th | API Management, TypeScript | | Hw3 Due Mar 12th |
