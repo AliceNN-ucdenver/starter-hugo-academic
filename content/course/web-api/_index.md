@@ -18,7 +18,7 @@ tags:
 
 **Instructor:** Shawn McCarthy  
 **Email:** shawn.mccarthy@ucdenver.edu  
-**Phone:** (303) 900-8613 
+**Phone:** (303) 900-8613  
 **Class:** Microsoft Teams / 330PM (Monday)  
 **Office Hours:** 445pm-545pm M/W Teams  
 
