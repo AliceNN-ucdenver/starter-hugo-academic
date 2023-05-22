@@ -1,4 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link><atom:link href="https://mccarthy.phd/index.xml" rel="self" type="application/rss+xml"/><description>Shawn McCarthy</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://mccarthy.phd/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link></image><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link><atom:link href="https://mccarthy.phd/index.xml" rel="self" type="application/rss+xml"/><description>Shawn McCarthy</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://mccarthy.phd/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link></image><item><title>Assignment Zero</title><link>https://mccarthy.phd/course/web-api/assignment0/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment0/</guid><description>&lt;h1 id="assignment-zero">Assignment Zero&lt;/h1>
+&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>In this assignment, you will familiarize yourself with &lt;strong>Postman&lt;/strong>, &lt;strong>HTTP&lt;/strong>, and &lt;strong>REST&lt;/strong> protocols using the Postman testing framework. You will also create your first node program and commit it to GitHub. Your task will be to create a Postman collection and automate REST tests within the project. Each test should include the required assertions.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ol>
+&lt;li>Create a free account on &lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/li>
+&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor.&lt;/li>
+&lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment0" target="_blank" rel="noopener">CSC3916_Assignment0&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
+&lt;li>Download an Integrated Development Environment (IDE). We recommend &lt;a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm&lt;/a> or &lt;a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode&lt;/a>.&lt;/li>
+&lt;li>Download the desktop version of &lt;a href="https://www.postman.com/downloads/" target="_blank" rel="noopener">Postman&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;h3 id="step-1-creating-a-rest-request">Step 1: Creating a REST Request&lt;/h3>
+&lt;ol>
+&lt;li>Open Postman.&lt;/li>
+&lt;li>Click on the &amp;lsquo;New&amp;rsquo; button and select &amp;lsquo;Request&amp;rsquo;.&lt;/li>
+&lt;li>Name your request (for instance &amp;lsquo;Book Search&amp;rsquo;) and select or create a new collection to store this request.&lt;/li>
+&lt;li>Set the request method to &amp;lsquo;GET&amp;rsquo;.&lt;/li>
+&lt;li>Set the request URL to &lt;code>https://www.googleapis.com/books/v1/volumes?q={{book_title}}&lt;/code>.&lt;/li>
+&lt;li>In the &amp;lsquo;Tests&amp;rsquo; tab, add the asserts for the request validation.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-2-setting-up-the-environment-variable-and-writing-tests">Step 2: Setting up the Environment Variable and Writing Tests&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the settings gear icon on the top right of Postman, then click &amp;lsquo;Manage Environments&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &amp;lsquo;Add&amp;rsquo; to create a new environment. Name your environment (for instance &amp;lsquo;Book Search Env&amp;rsquo;).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a new variable named &amp;lsquo;book_title&amp;rsquo; and set the initial value to &amp;lsquo;Turing&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Tests tab, write tests to validate the response. For instance:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Status code is 200&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">have&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">200&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Book title or description includes Turing&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">jsonData&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="sr">/(turing)/i&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">volumeInfo&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="sr">/(turing)/i&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">volumeInfo&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">description&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">environment&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">set&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;book_id&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">id&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-3-chaining-requests">Step 3: Chaining Requests&lt;/h3>
+&lt;ol>
+&lt;li>Create a new request as in Step 1.&lt;/li>
+&lt;li>Set the request URL to &lt;code>https://www.googleapis.com/books/v1/volumes/{{book_id}}&lt;/code>.&lt;/li>
+&lt;li>Similar to Step 2, write tests to validate the response.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-4-modifying-googlebooksjs">Step 4: Modifying googlebooks.js&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open your IDE and navigate to /utils/googlebooks.js.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Modify the method to return an object like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">data&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">status&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">statusText&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">statusText&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">headers&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">headers&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">requestHeader&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">config&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">headers&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-5-http-headers-analysis">Step 5: HTTP Headers Analysis&lt;/h3>
+&lt;ol>
+&lt;li>Investigate the HTTP headers in the request and response from the Postman console.&lt;/li>
+&lt;li>Create a new text file named &lt;code>headers.txt&lt;/code>.&lt;/li>
+&lt;li>Write a brief description of each key-value pair in the HTTP headers in the request and response.&lt;/li>
+&lt;li>Save the file and check it into your GitHub repository with the rest of the project.&lt;/li>
+&lt;/ol>
+&lt;h2 id="submission">Submission&lt;/h2>
+&lt;ol>
+&lt;li>Create a readme.md file at the root of your GitHub repository.&lt;/li>
+&lt;li>Within your Postman collection, click on the arrow next to the collection name, then select &amp;lsquo;Share&amp;rsquo;.&lt;/li>
+&lt;li>In the Share dialog, select &amp;lsquo;Embed&amp;rsquo;.&lt;/li>
+&lt;li>Make sure to include your environment in the share by clicking &amp;lsquo;Environment&amp;rsquo; and selecting the correct one.&lt;/li>
+&lt;li>Choose the &amp;lsquo;Markdown&amp;rsquo; tab.&lt;/li>
+&lt;li>Click &amp;lsquo;Copy to Clipboard&amp;rsquo; and paste this into your &lt;code>readme.md&lt;/code> file.&lt;/li>
+&lt;li>Commit and push the updated &lt;code>googlebooks.js&lt;/code> file to your GitHub repository.&lt;/li>
+&lt;li>Commit and push the &lt;code>headers.txt&lt;/code> file containing your HTTP headers analysis to your GitHub repository.&lt;/li>
+&lt;/ol>
+&lt;h2 id="rubric">Rubric&lt;/h2>
+&lt;ul>
+&lt;li>-10 points: homework not uploaded.&lt;/li>
+&lt;li>-2 points: missing Postman button in readme.md.&lt;/li>
+&lt;li>-2 points: missing check in request 1 for checking title and description in items.&lt;/li>
+&lt;li>-2 points: missing ID check in request 2.&lt;/li>
+&lt;li>-2 points: missing change in &lt;code>utils/googlebooks.js&lt;/code> (adding new object).&lt;/li>
+&lt;li>-2 points: missing text file with request headers.&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=vhYD3G1QlEo" target="_blank" rel="noopener">Creating a Test in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=jmzp0oJ2O1U" target="_blank" rel="noopener">Sharing a Live Version in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning.postman.com/docs/writing-scripts/test-scripts/" target="_blank" rel="noopener">Postman Learning Center: Writing tests&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning.postman.com/docs/collaborating-in-postman/sharing/" target="_blank" rel="noopener">Postman Learning Center: Sharing collections&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Replace &amp;ldquo;your-collection-id&amp;rdquo; with the actual ID of your collection.&lt;/p>
+&lt;p>&lt;a href="https://app.getpostman.com/run-collection/your-collection-id" target="_blank" rel="noopener">
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/a>&lt;/p></description></item><item><title>Assignment One</title><link>https://mccarthy.phd/course/web-api/assignment1/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment1/</guid><description>&lt;h1 id="assignment-one">Assignment One&lt;/h1>
+&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>The purpose of this assignment is to set up your GitHub and Render instances for future assignments. You will create an Echo server, setup auto-deployment on Render, and test the server using Postman.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ol>
+&lt;li>Sign up for a free &lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a> account if you don&amp;rsquo;t already have one.&lt;/li>
+&lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment1" target="_blank" rel="noopener">CSC3916_Assignment1&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
+&lt;li>Sign up for a free account on &lt;a href="https://render.com/" target="_blank" rel="noopener">Render&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;h3 id="step-1-creating-an-echo-server">Step 1: Creating an Echo Server&lt;/h3>
+&lt;ol>
+&lt;li>Navigate to the cloned repository on your GitHub Classroom repository.&lt;/li>
+&lt;li>Create a new file &lt;code>server.js&lt;/code>.&lt;/li>
+&lt;li>Implement an Echo server using Node.js and Express.js. This server should respond with the same string it receives in a POST request.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-2-setting-up-auto-deployment-on-render">Step 2: Setting up Auto-deployment on Render&lt;/h3>
+&lt;ol>
+&lt;li>Follow the steps in the Render &lt;a href="https://render.com/docs/deploy-node-express-app" target="_blank" rel="noopener">guide&lt;/a> to setup auto-deployment from your GitHub repository.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-3-creating-a-postman-request">Step 3: Creating a Postman Request&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open Postman and create a new POST request to your Render-deployed Echo server.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create an environment variable &lt;code>echo_body&lt;/code> for the body of your request.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the &amp;lsquo;Tests&amp;rsquo; tab, write tests to validate the response such as status code, response body, and response time.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Check if the status code of the response is 200
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Status code is 200&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">have&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">200&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Check if the response time is less than 200ms
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Response time is less than 200ms&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">expect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">responseTime&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">be&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">below&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">200&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// Check if the response body is equal to the echo_body environment variable
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Response body is correct&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">expect&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">text&lt;/span>&lt;span class="p">()).&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">equal&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">environment&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">get&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;echo_body&amp;#34;&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-4-creating-readme-and-sharing-collection">Step 4: Creating readme and Sharing Collection&lt;/h3>
+&lt;ol>
+&lt;li>Create a &lt;code>readme.md&lt;/code> file at the root of your GitHub repository.&lt;/li>
+&lt;li>Share your Postman collection and include it in your readme. Make sure to include your environment settings.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-5-submission">Step 5: Submission&lt;/h3>
+&lt;ol>
+&lt;li>Commit and push all your changes to your GitHub repository.&lt;/li>
+&lt;li>Submit the GitHub repository URL to Canvas.&lt;/li>
+&lt;/ol>
+&lt;h2 id="rubric">Rubric&lt;/h2>
+&lt;ul>
+&lt;li>-5: Not deployed to Render.&lt;/li>
+&lt;li>-5: Missing Postman Test.&lt;/li>
+&lt;li>-1: For each missing assert (test).&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://nodejs.org" target="_blank" rel="noopener">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.passportjs.org/docs/basic-digest/" target="_blank" rel="noopener">Passport.js Documentation - Basic Digest&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://render.com/docs/deploy-node-express-app" target="_blank" rel="noopener">Render Documentation - Deploy Node.js &amp;amp; Express.js app&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=YUZGfjc9aLk" target="_blank" rel="noopener">Creating an Echo Server in Node.js (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=vhYD3G1QlEo" target="_blank" rel="noopener">How to write tests in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Replace &amp;ldquo;your-collection-id&amp;rdquo; with the actual ID of your collection.&lt;/p>
+&lt;p>&lt;a href="https://app.getpostman.com/run-collection/your-collection-id" target="_blank" rel="noopener">
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/a>&lt;/p></description></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
 &lt;p>&lt;strong>Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong>&lt;/p>
 &lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
@@ -89,7 +276,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-968452713" class="chart">&lt;/div>
+&lt;div id="chart-629538147" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -98,7 +285,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-968452713', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-629538147', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
