@@ -97,8 +97,8 @@
 &lt;/ul>
 &lt;h2 id="resources">Resources&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=vhYD3G1QlEo" target="_blank" rel="noopener">Creating a Test in Postman (YouTube Video)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=jmzp0oJ2O1U" target="_blank" rel="noopener">Sharing a Live Version in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ycbil-gaoS8" target="_blank" rel="noopener">How to write tests in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=b9VlFDlwKvI" target="_blank" rel="noopener">How to share a postman via run in postman markdown&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://learning.postman.com/docs/writing-scripts/test-scripts/" target="_blank" rel="noopener">Postman Learning Center: Writing tests&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://learning.postman.com/docs/collaborating-in-postman/sharing/" target="_blank" rel="noopener">Postman Learning Center: Sharing collections&lt;/a>&lt;/li>
 &lt;/ul>
@@ -174,8 +174,9 @@
 &lt;li>&lt;a href="http://nodejs.org" target="_blank" rel="noopener">Node.js&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://www.passportjs.org/docs/basic-digest/" target="_blank" rel="noopener">Passport.js Documentation - Basic Digest&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://render.com/docs/deploy-node-express-app" target="_blank" rel="noopener">Render Documentation - Deploy Node.js &amp;amp; Express.js app&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=YUZGfjc9aLk" target="_blank" rel="noopener">Creating an Echo Server in Node.js (YouTube Video)&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.youtube.com/watch?v=vhYD3G1QlEo" target="_blank" rel="noopener">How to write tests in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=K82bKznm3lU" target="_blank" rel="noopener">Creating an Echo Server in Node.js (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=bnCOyGaSe84" target="_blank" rel="noopener">Deploy on render (YouTub Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=ycbil-gaoS8" target="_blank" rel="noopener">How to write tests in Postman (YouTube Video)&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Replace &amp;ldquo;your-collection-id&amp;rdquo; with the actual ID of your collection.&lt;/p>
 &lt;p>&lt;a href="https://app.getpostman.com/run-collection/your-collection-id" target="_blank" rel="noopener">
