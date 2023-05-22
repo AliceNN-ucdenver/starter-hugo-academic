@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link><atom:link href="https://mccarthy.phd/index.xml" rel="self" type="application/rss+xml"/><description>Shawn McCarthy</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://mccarthy.phd/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link></image><item><title>Assignment Zero</title><link>https://mccarthy.phd/course/web-api/assignment0/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment0/</guid><description>&lt;h1 id="assignment-zero">Assignment Zero&lt;/h1>
-&lt;h2 id="purpose">Purpose&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link><atom:link href="https://mccarthy.phd/index.xml" rel="self" type="application/rss+xml"/><description>Shawn McCarthy</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 24 Oct 2022 00:00:00 +0000</lastBuildDate><image><url>https://mccarthy.phd/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Shawn McCarthy</title><link>https://mccarthy.phd/</link></image><item><title>Assignment Zero</title><link>https://mccarthy.phd/course/web-api/assignment0/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment0/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
 &lt;p>In this assignment, you will familiarize yourself with &lt;strong>Postman&lt;/strong>, &lt;strong>HTTP&lt;/strong>, and &lt;strong>REST&lt;/strong> protocols using the Postman testing framework. You will also create your first node program and commit it to GitHub. Your task will be to create a Postman collection and automate REST tests within the project. Each test should include the required assertions.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
@@ -109,8 +108,7 @@
 &lt;div class="d-flex justify-content-center">
 &lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
-&lt;/a>&lt;/p></description></item><item><title>Assignment One</title><link>https://mccarthy.phd/course/web-api/assignment1/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment1/</guid><description>&lt;h1 id="assignment-one">Assignment One&lt;/h1>
-&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;/a>&lt;/p></description></item><item><title>Assignment One</title><link>https://mccarthy.phd/course/web-api/assignment1/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment1/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
 &lt;p>The purpose of this assignment is to set up your GitHub and Render instances for future assignments. You will create an Echo server, setup auto-deployment on Render, and test the server using Postman.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
@@ -276,7 +274,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-629538147" class="chart">&lt;/div>
+&lt;div id="chart-251638479" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -285,7 +283,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-629538147', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-251638479', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
