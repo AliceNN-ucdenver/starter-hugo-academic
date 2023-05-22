@@ -63,7 +63,7 @@ tags:
 | 10 | Mar 18th | Spring Break | | |
 | 11 | Mar 25th | CSS | | {{< cta cta_text="Hw4" cta_link="assignment4" >}} Due Mar 31st |
 | 12 | Apr 1st | React Movie, Patterns (Spec Topic) | | |
-| 13 | Apr 8th | React | | Hw5 Due Apr 14th |
+| 13 | Apr 8th | React | | {{< cta cta_text="Hw5" cta_link="assignment5" >}} Due Apr 14th |
 | 14 | Apr 15th | Mobile, Monetization | | |
 | 15 | April 22nd | Project Days | | |
 | 16 | April 29th | Project Presentations | | |

@@ -2,7 +2,7 @@
 title: Assignment Four
 date: '2023-05-01'
 type: book
-weight: 40
+weight: 50
 ---
 
 ## Purpose
