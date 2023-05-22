@@ -25,4 +25,114 @@
 &lt;details class="spoiler " id="spoiler-3">
 &lt;summary>Is Python case-sensitive?&lt;/summary>
 &lt;p>Yes&lt;/p>
-&lt;/details></description></item></channel></rss>
+&lt;/details></description></item><item><title/><link>https://mccarthy.phd/course/web-api/assignment0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment0/</guid><description>&lt;h1 id="assignment-zero---detailed-steps">Assignment Zero - Detailed Steps&lt;/h1>
+&lt;h2 id="purpose">Purpose&lt;/h2>
+&lt;p>In this assignment, you will familiarize yourself with &lt;strong>Postman&lt;/strong>, &lt;strong>HTTP&lt;/strong>, and &lt;strong>REST&lt;/strong> protocols using the Postman testing framework. You will also create your first node program and commit it to GitHub. Your task will be to create a Postman collection and automate REST tests within the project. Each test should include the required assertions.&lt;/p>
+&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;ol>
+&lt;li>Create a free account on &lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/li>
+&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor.&lt;/li>
+&lt;li>Download an Integrated Development Environment (IDE). We recommend &lt;a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm&lt;/a> or &lt;a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode&lt;/a>.&lt;/li>
+&lt;li>Download the desktop version of &lt;a href="https://www.postman.com/downloads/" target="_blank" rel="noopener">Postman&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h2 id="steps">Steps&lt;/h2>
+&lt;h3 id="step-1-creating-a-rest-request">Step 1: Creating a REST Request&lt;/h3>
+&lt;ol>
+&lt;li>Open Postman.&lt;/li>
+&lt;li>Click on the &amp;lsquo;New&amp;rsquo; button and select &amp;lsquo;Request&amp;rsquo;.&lt;/li>
+&lt;li>Name your request (for instance &amp;lsquo;Book Search&amp;rsquo;) and select or create a new collection to store this request.&lt;/li>
+&lt;li>Set the request method to &amp;lsquo;GET&amp;rsquo;.&lt;/li>
+&lt;li>Set the request URL to &lt;code>https://www.googleapis.com/books/v1/volumes?q={{book_title}}&lt;/code>.&lt;/li>
+&lt;li>In the &amp;lsquo;Tests&amp;rsquo; tab, add the asserts for the request validation.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-2-setting-up-the-environment-variable-and-writing-tests">Step 2: Setting up the Environment Variable and Writing Tests&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Click on the settings gear icon on the top right of Postman, then click &amp;lsquo;Manage Environments&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Click &amp;lsquo;Add&amp;rsquo; to create a new environment. Name your environment (for instance &amp;lsquo;Book Search Env&amp;rsquo;).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Create a new variable named &amp;lsquo;book_title&amp;rsquo; and set the initial value to &amp;lsquo;Turing&amp;rsquo;.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>In the Tests tab, write tests to validate the response. For instance:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Status code is 200&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">to&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">have&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">200&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Book title or description includes Turing&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="kd">function&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">jsonData&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">json&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kd">var&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">length&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="nx">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="sr">/(turing)/i&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">volumeInfo&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">title&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="o">||&lt;/span> &lt;span class="sr">/(turing)/i&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">test&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">volumeInfo&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">description&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">pm&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">environment&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">set&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;book_id&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">jsonData&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">items&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">].&lt;/span>&lt;span class="nx">id&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">});&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-3-chaining-requests">Step 3: Chaining Requests&lt;/h3>
+&lt;ol>
+&lt;li>Create a new request as in Step 1.&lt;/li>
+&lt;li>Set the request URL to &lt;code>https://www.googleapis.com/books/v1/volumes/{{book_id}}&lt;/code>.&lt;/li>
+&lt;li>Similar to Step 2, write tests to validate the response.&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-4-modifying-googlebooksjs">Step 4: Modifying googlebooks.js&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>Open your IDE and navigate to /utils/googlebooks.js.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Modify the method to return an object like:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">data&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">status&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">status&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">statusText&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">statusText&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">headers&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">headers&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">requestHeader&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">response&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">config&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">headers&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
+&lt;/ol>
+&lt;h3 id="step-5-http-headers-analysis">Step 5: HTTP Headers Analysis&lt;/h3>
+&lt;ol>
+&lt;li>Investigate the HTTP headers in the request and response from the Postman console.&lt;/li>
+&lt;li>Create a new text file named &lt;code>headers.txt&lt;/code>.&lt;/li>
+&lt;li>Write a brief description of each key-value pair in the HTTP headers in the request and response.&lt;/li>
+&lt;li>Save the file and check it into your GitHub repository with the rest of the project.&lt;/li>
+&lt;/ol>
+&lt;h2 id="submission">Submission&lt;/h2>
+&lt;ol>
+&lt;li>Create a readme.md file at the root of your GitHub repository.&lt;/li>
+&lt;li>Within your Postman collection, click on the arrow next to the collection name, then select &amp;lsquo;Share&amp;rsquo;.&lt;/li>
+&lt;li>In the Share dialog, select &amp;lsquo;Embed&amp;rsquo;.&lt;/li>
+&lt;li>Make sure to include your environment in the share by clicking &amp;lsquo;Environment&amp;rsquo; and selecting the correct one.&lt;/li>
+&lt;li>Choose the &amp;lsquo;Markdown&amp;rsquo; tab.&lt;/li>
+&lt;li>Click &amp;lsquo;Copy to Clipboard&amp;rsquo; and paste this into your &lt;code>readme.md&lt;/code> file.&lt;/li>
+&lt;li>Commit and push the updated &lt;code>googlebooks.js&lt;/code> file to your GitHub repository.&lt;/li>
+&lt;li>Commit and push the &lt;code>headers.txt&lt;/code> file containing your HTTP headers analysis to your GitHub repository.&lt;/li>
+&lt;/ol>
+&lt;h2 id="rubric">Rubric&lt;/h2>
+&lt;ul>
+&lt;li>-10 points: homework not uploaded.&lt;/li>
+&lt;li>-2 points: missing Postman button in readme.md.&lt;/li>
+&lt;li>-2 points: missing check in request 1 for checking title and description in items.&lt;/li>
+&lt;li>-2 points: missing ID check in request 2.&lt;/li>
+&lt;li>-2 points: missing change in &lt;code>utils/googlebooks.js&lt;/code> (adding new object).&lt;/li>
+&lt;li>-2 points: missing text file with request headers.&lt;/li>
+&lt;/ul>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=vhYD3G1QlEo" target="_blank" rel="noopener">Creating a Test in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=jmzp0oJ2O1U" target="_blank" rel="noopener">Sharing a Live Version in Postman (YouTube Video)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning.postman.com/docs/writing-scripts/test-scripts/" target="_blank" rel="noopener">Postman Learning Center: Writing tests&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learning.postman.com/docs/collaborating-in-postman/sharing/" target="_blank" rel="noopener">Postman Learning Center: Sharing collections&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>Replace &amp;ldquo;your-collection-id&amp;rdquo; with the actual ID of your collection.&lt;/p>
+&lt;p>&lt;a href="https://app.getpostman.com/run-collection/your-collection-id" target="_blank" rel="noopener">
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/a>&lt;/p></description></item></channel></rss>
