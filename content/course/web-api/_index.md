@@ -68,6 +68,14 @@ tags:
 | 15 | April 22nd | Project Days | | |
 | 16 | April 29th | Project Presentations | | |
 
+## Lecture Videos
+### REST (from 2023)
+{{< video src="https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EWH0Fb_cGVhGszcUuj6Gq8YBqgzXOk9xz8P6Xlw3qk3N8Q?e=5sDrb2" controls="yes" >}}
+
+### Doctor and Patients (from 2023)
+{{< video src="https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ" controls="yes" >}}
+
+
 **Grading Policy:**
 - Homework: 65%
 - Projects: 35%
