@@ -26,7 +26,7 @@ bio: As a distinguished AntiaB.org AI Committee Member and Vice President of Glo
 
 McCarthy is not merely conducting research; he is creating a novel framework. His work aims to develop a comprehensive understanding of how news analysis and global events influence market sentiment across various sectors. By constructing an extensive model for market prediction and risk management, he is enabling organizations to navigate the complexities of financial markets within an interconnected global economy more effectively.
 
-In his role as a Graduate Instructor at the esteemed University of Colorado, McCarthy upholds his professional motto, "Inspire Growth," and is committed to fostering innovation in others. His efforts extend beyond the immediate confines of finance and academia, as he seeks to develop future leaders capable of navigating the challenges of an increasingly complex global market.
+In his role as a Graduate Instructor at the esteemed University of Colorado, McCarthy upholds his professional motto, `Inspire Growth` and is committed to fostering innovation in others. His efforts extend beyond the immediate confines of finance and academia, as he seeks to develop future leaders capable of navigating the challenges of an increasingly complex global market.
 
 # Interests to show in About widget
 interests:
