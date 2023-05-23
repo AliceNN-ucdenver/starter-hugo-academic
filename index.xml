@@ -764,7 +764,106 @@ class Review {
 &lt;li>&lt;a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">Create React App&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/mars/create-react-app-buildpack#user-content-requires" target="_blank" rel="noopener">React Buildpack&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://mongoosejs.com/docs/api.html#aggregate_Aggregate" target="_blank" rel="noopener">Mongoose Aggregate&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
+&lt;/ul></description></item><item><title>GitHub Introduction</title><link>https://mccarthy.phd/slides/github/</link><pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/slides/github/</guid><description>&lt;h1 id="introduction-to-github">Introduction to GitHub&lt;/h1>
+&lt;p>&lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a> | &lt;a href="https://docs.github.com/en" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="what-is-github">What is GitHub?&lt;/h2>
+&lt;ul>
+&lt;li>A platform for version control and collaboration&lt;/li>
+&lt;li>It allows you and others to work on projects from anywhere&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="setting-up-github">Setting Up GitHub&lt;/h2>
+&lt;ol>
+&lt;li>Go to &lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub.com&lt;/a>&lt;/li>
+&lt;li>Click on &lt;code>Sign Up&lt;/code>&lt;/li>
+&lt;li>Fill in your details and click &lt;code>Create account&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="creating-a-new-repository">Creating a New Repository&lt;/h2>
+&lt;ol>
+&lt;li>After logging in, click on &lt;code>New repository&lt;/code>&lt;/li>
+&lt;li>Name your repository&lt;/li>
+&lt;li>Choose to make the repository &lt;code>Public&lt;/code> or &lt;code>Private&lt;/code>&lt;/li>
+&lt;li>Make sure the default branch name is &lt;code>main&lt;/code>&lt;/li>
+&lt;li>Click &lt;code>Create repository&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="cloning-a-repository">Cloning a Repository&lt;/h2>
+&lt;ol>
+&lt;li>Navigate to the main page of the repository&lt;/li>
+&lt;li>Click &lt;code>Code&lt;/code>&lt;/li>
+&lt;li>To clone the repository using HTTPS, under &amp;ldquo;Clone with HTTPS&amp;rdquo;, click the clipboard icon&lt;/li>
+&lt;li>Open Git Bash&lt;/li>
+&lt;li>Change the current working directory to the location where you want the cloned directory&lt;/li>
+&lt;li>Type &lt;code>git clone&lt;/code>, and then paste the URL you copied earlier&lt;/li>
+&lt;li>Press &lt;code>Enter&lt;/code> to create your local clone&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="making-changes">Making Changes&lt;/h2>
+&lt;ol>
+&lt;li>Navigate to the file in your repository that you want to change&lt;/li>
+&lt;li>Click the pencil icon in the upper right corner of the file view to edit&lt;/li>
+&lt;li>Make and commit your changes&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="creating-a-gitignore-file">Creating a .gitignore File&lt;/h2>
+&lt;ol>
+&lt;li>In your repository, create a new file named &lt;code>.gitignore&lt;/code>&lt;/li>
+&lt;li>For a Node.js project, you might include the following in your &lt;code>.gitignore&lt;/code>:&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-txt" data-lang="txt">&lt;span class="line">&lt;span class="cl">node_modules/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">npm-debug.log
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.DS_Store
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">.env
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="about-env-and-gitignore">About .env and .gitignore&lt;/h2>
+&lt;ul>
+&lt;li>&lt;code>.env&lt;/code> files usually contain sensitive information like API keys and should not be tracked in Git&lt;/li>
+&lt;li>Including &lt;code>.env&lt;/code> in your &lt;code>.gitignore&lt;/code> ensures it won&amp;rsquo;t be committed to your GitHub repository&lt;/li>
+&lt;li>Instead, provide a &lt;code>.env.example&lt;/code> file with the required keys and dummy values to guide others&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="pushing-changes">Pushing Changes&lt;/h2>
+&lt;ol>
+&lt;li>Open a terminal&lt;/li>
+&lt;li>Navigate to your repository directory&lt;/li>
+&lt;li>Type &lt;code>git add .&lt;/code> to add all changes&lt;/li>
+&lt;li>Type &lt;code>git commit -m &amp;quot;Your message&amp;quot;&lt;/code> to commit changes&lt;/li>
+&lt;li>Type &lt;code>git push&lt;/code> to push changes to GitHub&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="pulling-changes">Pulling Changes&lt;/h2>
+&lt;ol>
+&lt;li>Open a terminal&lt;/li>
+&lt;li>Navigate to your repository directory&lt;/li>
+&lt;li>Type &lt;code>git pull&lt;/code> to update your local repository with the latest changes&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="issues">Issues&lt;/h2>
+&lt;p>Issues are a great way to keep track of tasks, enhancements, and bugs for your projects&lt;/p>
+&lt;ol>
+&lt;li>Navigate to the main page of the repository&lt;/li>
+&lt;li>Click &lt;code>Issues&lt;/code>&lt;/li>
+&lt;li>Click &lt;code>New issue&lt;/code>&lt;/li>
+&lt;li>Create a title and write a description for your issue&lt;/li>
+&lt;li>Click &lt;code>Submit new issue&lt;/code>&lt;/li>
+&lt;/ol>
+&lt;hr>
+&lt;h2 id="pull-requests">Pull Requests&lt;/h2>
+&lt;p>Pull requests let you tell others about changes you&amp;rsquo;ve pushed to a branch in a repository on GitHub&lt;/p>
+&lt;ol>
+&lt;li>Navigate to the main page of the repository&lt;/li>
+&lt;li>Click &lt;code>Pull requests&lt;/code>&lt;/li>
+&lt;li>Click &lt;code>New pull request&lt;/code>&lt;/li>
+&lt;li>Select the branch you made changes to and the branch you want to merge changes&lt;/li>
+&lt;/ol>
+&lt;p>into
+5. Review your changes and click &lt;code>Create pull request&lt;/code>&lt;/p>
+&lt;hr>
+&lt;h1 id="questions">Questions?&lt;/h1>
+&lt;p>&lt;a href="https://github.community/" target="_blank" rel="noopener">Ask&lt;/a>
+&lt;a href="https://docs.github.com/en" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</link><pubDate>Tue, 16 May 2023 10:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/enhancing-financial-market-analysis-and-prediction-with-emotion-corpora-and-news-co-occurrence-network/</guid><description/></item><item><title>Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network</title><link>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</link><pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-enhancing-2023/</guid><description/></item><item><title>Recommender Systems Hands on Workshop | Training Wide and Deep Recommenders | Day 2</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</link><pubDate>Mon, 13 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop-training-wide-and-deep-recommenders-day-2/</guid><description/></item><item><title>Recommender Systems Hands on Workshop</title><link>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</link><pubDate>Fri, 10 Mar 2023 12:00:00 +0000</pubDate><guid>https://mccarthy.phd/talk/recommender-systems-hands-on-workshop/</guid><description/></item><item><title>Writing technical content in Markdown</title><link>https://mccarthy.phd/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
 &lt;p>&lt;strong>Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong>&lt;/p>
 &lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p>
 &lt;h2 id="examples">Examples&lt;/h2>
@@ -855,7 +954,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-245976813" class="chart">&lt;/div>
+&lt;div id="chart-498123765" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -864,7 +963,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-245976813', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-498123765', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
