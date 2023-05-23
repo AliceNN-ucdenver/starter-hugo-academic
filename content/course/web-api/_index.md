@@ -51,7 +51,7 @@ tags:
 ## Course Outline:
 | Lecture/Week | Date | Topic | Reading | Assignments |
 |---|---|---|---|---|
-| 1 | Jan 17th | GitHub, PostMan | MERN: Chapter 1 MERN Setup, Full Stack: Preparing the Development Environment, [Link](https://youtu.be/vUcRYyWh2Yg) | |
+| 1 | Jan 17th | GitHub, PostMan | MERN: Chapter 1 MERN Setup, Full Stack: Preparing the Development Environment, [JavaScript Making Sense of the Madness (YouTube)](https://youtu.be/vUcRYyWh2Yg) | |
 | 2 | Jan 22nd | HTTP | [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg) | {{< cta cta_text="Hw0" cta_link="assignment0" >}} Due Jan 28th  |
 | 3 | Jan 29th | ES6/JavaScript, Heroku, Pick Teams | [The Modern JavaScript Tutorial](https://javascript.info/) | {{< cta cta_text="Hw1" cta_link="assignment1" >}} Due Feb 4th |
 | 4 | Feb 5th | NodeJS, Authorization, Basic Auth, oAuth | Full Stack: Auth with JWT | |
@@ -59,7 +59,7 @@ tags:
 | 6 | Feb 19th | API Design / Swagger / Best Practices, React Auth | Full Stack: Following Best practices, Full Stack: Adding a React Frontend | {{< cta cta_text="Hw2" cta_link="assignment2" >}} Due Feb 25th |
 | 7 | Feb 26th | MongoDB | Full Stack: Building a Backend with MongoDB | |
 | 8 | Mar 4th | API Management, TypeScript | | {{< cta cta_text="Hw3" cta_link="assignment3" >}} Due Mar 10th |
-| 9 | Mar 11th | Analytics, Code Smells (Spec topic) | [YouTube](https://www.youtube.com/watch?v=KGsnhdcBvd0) | |
+| 9 | Mar 11th | Analytics, Code Smells (Spec topic) | [Code Smells and how to fix them (YouTube)](https://www.youtube.com/watch?v=KGsnhdcBvd0) | |
 | 10 | Mar 18th | Spring Break | | |
 | 11 | Mar 25th | CSS | | {{< cta cta_text="Hw4" cta_link="assignment4" >}} Due Mar 31st |
 | 12 | Apr 1st | React Movie, Patterns (Spec Topic) | | |
@@ -71,8 +71,8 @@ tags:
 ## Lecture Videos
 | Lecture/Week | Date | Video |
 |---|---|---|
-| 1 | Jan 17th | {{< cta cta_text="REST Overview" cta_link="https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EWH0Fb_cGVhGszcUuj6Gq8YBqgzXOk9xz8P6Xlw3qk3N8Q?e=5sDrb2" cta_new_tab="true">}} |
-| 2 | Jan 22nd | {{< cta cta_text="Doctors and Patients API" cta_link="https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ" cta_new_tab="true">}} |
+| 1 | Jan 17th | [REST Overview](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EWH0Fb_cGVhGszcUuj6Gq8YBqgzXOk9xz8P6Xlw3qk3N8Q?e=5sDrb2)<br/>[GitHub Slides](/slides/github)<br/> [JavaScript Making Sense of the Madness (YouTube)](https://youtu.be/vUcRYyWh2Yg) |
+| 2 | Jan 22nd | [Doctors and Patients API](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ) <br/> [Learn JavaScript - Full Course for Beginners (YouTube)](https://www.youtube.com/watch?v=PkZNo7MFNFg) |
 
 **Grading Policy:**
 - Homework: 65%
