@@ -22,11 +22,7 @@ organizations:
     url: https://engineering.ucdenver.edu/departments/computer-science-and-engineering
 
 # Short bio (displayed in user profile at end of posts)
-bio: As a distinguished AntiaB.org AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife, Shawn McCarthy is currently pursuing a PhD with a focus on the impact of global events on market sentiment. His research, which builds upon a prior study (https://www.mdpi.com/1911-8074/16/4/226), seeks to uncover the intricate relationships between world events, producing countries, and their corresponding financial markets.
-
-McCarthy is not merely conducting research; he is creating a novel framework. His work aims to develop a comprehensive understanding of how news analysis and global events influence market sentiment across various sectors. By constructing an extensive model for market prediction and risk management, he is enabling organizations to navigate the complexities of financial markets within an interconnected global economy more effectively.
-
-In his role as a Graduate Instructor at the esteemed University of Colorado, McCarthy upholds his professional motto, `Inspire Growth` and is committed to fostering innovation in others. His efforts extend beyond the immediate confines of finance and academia, as he seeks to develop future leaders capable of navigating the challenges of an increasingly complex global market.
+bio: Shawn McCarthy is a distinguished AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife. He is currently pursuing a PhD, focusing on the impact of global events on market sentiment, and is developing an extensive model for market prediction and risk management. Additionally, as a Graduate Instructor at the University of Colorado, he fosters innovation and growth in future leaders. His work consistently echoes his professional motto\: `Inspire Growth.`
 
 # Interests to show in About widget
 interests:
@@ -86,6 +82,10 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
+As a distinguished AntiaB.org AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife, Shawn McCarthy is currently pursuing a PhD with a focus on the impact of global events on market sentiment. His research, which builds upon a prior study (https://www.mdpi.com/1911-8074/16/4/226), seeks to uncover the intricate relationships between world events, producing countries, and their corresponding financial markets.
 
-Shawn McCarthy, an AI Committee Member and Manulife's VP of Global Architecture, Big Data, and Information Risk, is pursuing a PhD focused on the impact of global events on market sentiment. His research expands upon a previous study (https://www.mdpi.com/1911-8074/16/4/226) and aims to uncover connections between world events, producing countries, and their financial markets. Shawn's work seeks to develop a novel approach for understanding how news analysis and global events influence market sentiment and performance across various sectors. By creating a comprehensive model for market prediction and risk management, he aims to help organizations navigate the complexities of financial markets in an interconnected global economy. As a Graduate Instructor at the University of Colorado, Shawn is driven by his motto, "Inspire Growth," and committed to fostering innovation in others.
+McCarthy is not merely conducting research; he is creating a novel framework. His work aims to develop a comprehensive understanding of how news analysis and global events influence market sentiment across various sectors. By constructing an extensive model for market prediction and risk management, he is enabling organizations to navigate the complexities of financial markets within an interconnected global economy more effectively.
+
+In his role as a Graduate Instructor at the esteemed University of Colorado, McCarthy upholds his professional motto, `Inspire Growth` and is committed to fostering innovation in others. His efforts extend beyond the immediate confines of finance and academia, as he seeks to develop future leaders capable of navigating the challenges of an increasingly complex global market.
+
 {style="text-align: justify;"}
