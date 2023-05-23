@@ -22,7 +22,11 @@ organizations:
     url: https://engineering.ucdenver.edu/departments/computer-science-and-engineering
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research seeks to develop a novel approach for understanding how emotional news analysis and world events influence market sentiment and the performance of companies across various sectors. By integrating the insights derived from the analysis of global events and their effects on future commodities, we aim to create a more comprehensive and robust model framework for market prediction and risk management. This approach will enable organizations to make better-informed decisions and navigate the complexities of the financial markets in the face of an increasingly interconnected global economy.
+bio: As a distinguished AntiaB.org AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife, Shawn McCarthy is currently pursuing a PhD with a focus on the impact of global events on market sentiment. His research, which builds upon a prior study (https://www.mdpi.com/1911-8074/16/4/226), seeks to uncover the intricate relationships between world events, producing countries, and their corresponding financial markets.
+
+McCarthy is not merely conducting research; he is creating a novel framework. His work aims to develop a comprehensive understanding of how news analysis and global events influence market sentiment across various sectors. By constructing an extensive model for market prediction and risk management, he is enabling organizations to navigate the complexities of financial markets within an interconnected global economy more effectively.
+
+In his role as a Graduate Instructor at the esteemed University of Colorado, McCarthy upholds his professional motto, "Inspire Growth," and is committed to fostering innovation in others. His efforts extend beyond the immediate confines of finance and academia, as he seeks to develop future leaders capable of navigating the challenges of an increasingly complex global market.
 
 # Interests to show in About widget
 interests:
