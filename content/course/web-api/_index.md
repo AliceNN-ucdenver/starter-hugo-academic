@@ -74,7 +74,7 @@ tags:
 | 1 | Jan 17th | [REST Overview](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EWH0Fb_cGVhGszcUuj6Gq8YBqgzXOk9xz8P6Xlw3qk3N8Q?e=5sDrb2)<br/>[GitHub Slides](/slides/github)<br/> [JavaScript Making Sense of the Madness (YouTube)](https://youtu.be/vUcRYyWh2Yg) |
 | 2 | Jan 22nd | [Doctors and Patients API](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ) <br/> [Learn JavaScript - Full Course for Beginners (YouTube)](https://www.youtube.com/watch?v=PkZNo7MFNFg) <br /> [HTTP Lecture 1](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EUIg0Lc4zu9Mm5LJSjSd8xIBPhpIkWS8Ieyp-D5YZModLQ?e=vUeOKP) <br /> [HTTP Lecture 2](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/ETI1K9m48NpIhWzpRR6BFSwBPmvQt6ejJLy4DtvJspo38A?e=xOy7pY) |
 | 3 | Jan 29th | [JavaScript Lecture](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/ESP1MVmlfAxNtE4sA0PMTCkBfxZM6RVr9pIr4pAxOr41SA?e=DjOlRC) <br /> [Render Deployment](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EfKqFjgeH-VJodtLCOB9TjAB4hWhuvAjN7AtA3PWRP5voA?e=PzUJzu) |
-| 4 | Feb 5th | [Node](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EcKIqZCmIFdFnmq75FOd96gBQ3kYAj-9o9guX8iDIbv6aw?e=bbqwrg) <br /> [Assignment 2 Walkthrough](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/Ec0xnhO30NpBtLKQIWx_F2IBw4rTIlKaim9BnaGhbZ5_Xg?e=k0sbOe) |
+| 4 | Feb 5th | [Node](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EcKIqZCmIFdFnmq75FOd96gBQ3kYAj-9o9guX8iDIbv6aw?e=bbqwrg) <br /> [NodeJS Full Course (YouTube)](https://youtu.be/5b2VtgR2ULA) <br /> [Assignment 2 Walkthrough](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/Ec0xnhO30NpBtLKQIWx_F2IBw4rTIlKaim9BnaGhbZ5_Xg?e=k0sbOe) |
 | 5 | Feb 12th | [Node Security and Unit Testing](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EYKYjOe9jaZArcpGpiuYER0BONbbuNWFq4vfaq57cpNmSQ?e=2twyhT) <br /> [Unit Testing and Pre-React](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/Ed_nhKTS5sROv6gkakuYV8MBgO2DFd0LUREwrCQrSpryCA?e=XGzwF4) |
 | 6 | Feb 19th | [Best Practices](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EUdcMsI68NlKvUoRXY8tug8B7Mltlsa256UDqSEYlLCcRg?e=73dWpf)<br /> [React Auth](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EQaEI6uh8gFAjueDLaSsaxUBja-aju0_RGcxlI11TkwKMA?e=L8W1rK) |
 | 7 | Feb 26th | [Mongo](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EeZqEgDBgPxEpMQ6HwOYFuMBUF56Sh7dUL72l3r2bO0mHg?e=W0wj8f) <br /> [Mongo - User Schema](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/Ed79XbDUbbFGrA2UX7DsVYABvLQSQgtnAxZgC54Cko0yBQ?e=cuzv7f) <br /> [Render - Deploy React](https://olucdenver-my.sharepoint.com/%3Av%3A/g/personal/shawn_mccarthy_ucdenver_edu/EU7zzLk0Mr9FoULrjRFAd4gBIXhYvOrpGcOV3q_rzqC2uQ?e=vP6N3x) |
@@ -106,10 +106,10 @@ CU Denver faculty and staff understand the stress and pressure of college life. 
 ## FAQs
 
 {{< spoiler text="Are there prerequisites?" >}}
-There are no prerequisites for the first course.
+CSCI 2421-3 Data Structures & Program Design 
 {{< /spoiler >}}
 
 {{< spoiler text="How often do the courses run?" >}}
-Continuously, at your own pace.
+Every Spring
 {{< /spoiler >}}
 
