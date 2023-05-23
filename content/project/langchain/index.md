@@ -1,5 +1,5 @@
 ---
-title: Updating the GPT-4 PDF Chatbot LangChain Repository
+title: Updating the GPT-4 PDF Chatbot LangChain Repository (mayooear)
 summary: Changes to gpt4-pdf-chatbot-langchain
 tags:
   - LangChain
@@ -9,13 +9,13 @@ date: '2023-05-19T00:00:00Z'
 external_link: ''
 
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: Credit to mayooear
   focal_point: Smart
 
 links:
   - icon: github
     icon_pack: fab
-    name: Follow
+    name: mayooear
     url: https://github.com/mayooear/gpt4-pdf-chatbot-langchain
 url_code: ''
 url_pdf: ''
