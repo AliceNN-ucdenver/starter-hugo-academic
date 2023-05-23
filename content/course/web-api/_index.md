@@ -70,6 +70,7 @@ tags:
 
 ## Lecture Videos
 | Lecture/Week | Date | Video |
+|---|---|---|
 | 1 | Jan 17th | {{< cta cta_text="REST Overview" cta_link="https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EWH0Fb_cGVhGszcUuj6Gq8YBqgzXOk9xz8P6Xlw3qk3N8Q?e=5sDrb2" cta_new_tab="true">}} |
 | 2 | Jan 22nd | {{< cta cta_text="Doctors and Patients API" cta_link="https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ" cta_new_tab="true">}} |
 
