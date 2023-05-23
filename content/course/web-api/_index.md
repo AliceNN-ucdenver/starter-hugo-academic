@@ -72,7 +72,9 @@ tags:
 | Lecture/Week | Date | Video |
 |---|---|---|
 | 1 | Jan 17th | [REST Overview](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EWH0Fb_cGVhGszcUuj6Gq8YBqgzXOk9xz8P6Xlw3qk3N8Q?e=5sDrb2)<br/>[GitHub Slides](/slides/github)<br/> [JavaScript Making Sense of the Madness (YouTube)](https://youtu.be/vUcRYyWh2Yg) |
-| 2 | Jan 22nd | [Doctors and Patients API](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ) <br/> [Learn JavaScript - Full Course for Beginners (YouTube)](https://www.youtube.com/watch?v=PkZNo7MFNFg) |
+| 2 | Jan 22nd | [Doctors and Patients API](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EeA2Mv53JjlIrJ60Bk-oY3IBeeGWc0lfap56RUAIpht3Eg?e=Gg84VJ) <br/> [Learn JavaScript - Full Course for Beginners (YouTube)](https://www.youtube.com/watch?v=PkZNo7MFNFg) <br /> [HTTP Lecture 1](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EUIg0Lc4zu9Mm5LJSjSd8xIBMDv3AjzHer1aD0wA1JO22Q?e=8i3Wwb) <br /> [HTTP Lecture 2](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/ETI1K9m48NpIhWzpRR6BFSwB5sZaUEHYXoRT4fbH_VBxsg?e=qmKdNS) |
+| 3 | Jan 29th | [JavaScript Lecture]*https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/ESP1MVmlfAxNtE4sA0PMTCkBM93Et7qDjtcK5fVSac0TNg?e=b5RPCS) <br /> [Render Deployment](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EfKqFjgeH-VJodtLCOB9TjAB4hWhuvAjN7AtA3PWRP5voA?e=PzUJzu) |
+| 4 | Feb 5th | [Node](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/EcKIqZCmIFdFnmq75FOd96gBbkYHdBXCNEbUBkNejTIZmw?e=XfQeBB) <br /> [Assignment 2 Walkthrough](https://olucdenver-my.sharepoint.com/:v:/g/personal/shawn_mccarthy_ucdenver_edu/Ec0xnhO30NpBtLKQIWx_F2IBw4rTIlKaim9BnaGhbZ5_Xg?e=k0sbOe)
 
 **Grading Policy:**
 - Homework: 65%
