@@ -22,7 +22,7 @@ organizations:
     url: https://engineering.ucdenver.edu/departments/computer-science-and-engineering
 
 # Short bio (displayed in user profile at end of posts)
-bio: Shawn McCarthy is a distinguished AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife. He is currently pursuing a PhD, focusing on the impact of global events on market sentiment, and is developing an extensive model for market prediction and risk management. Additionally, as a Graduate Instructor at the University of Colorado, he fosters innovation and growth in future leaders. His work consistently echoes his professional motto\: `Inspire Growth.`
+bio: Shawn McCarthy is a distinguished AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife. He is currently pursuing a PhD, focusing on the impact of global events on market sentiment, and is developing an extensive model for market prediction and risk management. Additionally, as a Graduate Instructor at the University of Colorado, he fosters innovation and growth in future leaders. His work consistently echoes his professional motto `Inspire Growth.`
 
 # Interests to show in About widget
 interests:
