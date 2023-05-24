@@ -85,7 +85,7 @@ sections:
               Shawn McCarthy distinguished himself as Director/VP and Head of Portals and APIs at Vantiv, a leading financial institution, where he served for nearly five years. He led large development organizations, focusing on the design and architecture of API Solutions and an Enterprise Prepaid Platform. His role was crucial in facilitating secure code development, enhancing Developer Experience (DX), and implementing performance updates to a transaction-based processing platform. McCarthy's leadership was instrumental in driving firm-wide API development across the Vantiv OS, thereby utilizing modern technologies to improve performance, maintainability, and user experience. Now a part of Worldpay, Inc., Vantiv remains a pivotal player in providing payment processing and technology services.
     design:
       columns: '2'
-  - block: volunteering
+  - block: experience
     content:
       title: Volunteering
       date_format: Jan 2006
