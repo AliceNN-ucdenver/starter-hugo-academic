@@ -102,7 +102,7 @@ sections:
         - title: AI Committee Member
           company: AnitaB.org
           company_url: ''
-          company_logo: AnitaB
+          company_logo: anitab
           location: Remote
           date_start: '2020-05-01'
           date_end: ''
@@ -111,7 +111,7 @@ sections:
         - title: Co-chair, Mentoring Committee
           company: AnitaB.org
           company_url: ''
-          company_logo: AnitaB
+          company_logo: anitab
           location: Remote
           date_start: '2019-03-01'
           date_end: '2021-03-01'
