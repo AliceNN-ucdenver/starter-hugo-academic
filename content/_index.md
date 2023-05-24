@@ -49,16 +49,25 @@ sections:
       items:
         - title: Vice President, Global Architecture, Risk and Data
           company: Manulife
-          company_url: ''
+          company_url: 'https://www.manulifeim.com/us/en'
           company_logo: manulife
           location: Massachusetts
           date_start: '2021-03-01'
           date_end: ''
           description: |2-
               Shawn McCarthy has been serving as the Vice President of Global Architecture, Risk, and Data at Manulife since March 2020. Leveraging his extensive background in software development, organizational development, and solution architecture, he has been instrumental in navigating the challenges of global architecture, risk management, and data handling in various regions including North America, Asia, and Europe. Manulife, being a Canadian multinational insurance company and financial services provider, can benefit immensely from Shawn's expertise. With his abilities to adapt to new technologies and situations, he can help in managing the company's vast portfolio of applications supporting a variety of sectors​. Manulife is the largest insurance company in Canada and the 28th largest fund manager in the world, with a strong presence in Canada, Asia, and the United States through its John Hancock Financial division​.
+        - title: Innovation Advisory Council Member
+          company: Vation Ventures
+          company_url: 'https://www.vationventures.com/'
+          company_logo: vation
+          location: Boston, Massachusetts, United States
+          date_start: '2020-06-01'
+          date_end: ''
+          description: |2-
+              This role at Vation Ventures involves navigating the cutting-edge Vation Innovation Platform, which offers industry-leading research, technology ecosystem connections, and internal collaboration tools. It also includes leveraging custom services to support organizations from early stages of growth to maintaining a competitive edge. The role is part of a global community of CXOs, VCs, and entrepreneurs aimed at harnessing the latest thinking to innovate faster and smarter. Responsibilities also include assisting various stakeholders including early-stage companies, executives, distributors and resellers, and venture capital firms in realizing their innovation and growth objectives. The role shapes the future of technology by sitting at the forefront of new and disruptive ideas, gaining exposure to leading VC insights, and interacting with emerging technology companies poised to change industries.
         - title: Graduate Instructor
           company: University of Colorado Denver
-          company_url: ''
+          company_url: 'https://engineering.ucdenver.edu/departments/computer-science-and-engineering'
           company_logo: colorado
           location: Colorado
           date_start: '2015-01-01'
@@ -67,16 +76,25 @@ sections:
               Shawn McCarthy has been affiliated with the University of Colorado Denver for over 9 years, serving in roles such as an advisory board member and a graduate instructor. As an advisory board member, he focuses on driving corporate relationships, expanding the university's community presence, developing programs for students, and encouraging faculty development. As a graduate instructor, he teaches courses in Web API technologies. His commitment to the university and its students, along with his industry experience and technical knowledge, make him a valuable asset. The University of Colorado Denver is a public research university that is part of the University of Colorado system. Its history dates back to 1912, and it is recognized for its urban campus that houses over 13,500 students
         - title: Managing Director - Platform and Application Architecture
           company: Charles Schwab
-          company_url: ''
+          company_url: 'https://www.schwab.com/'
           company_logo: charles
           location: Colorado
           date_start: '2016-09-01'
           date_end: '2020-03-01'
           description:  |2-
               Shawn McCarthy served as the Managing Director of Platform and Application Architecture at Charles Schwab for nearly four years. He led Schwab's platform and application architecture team, oversaw the technology strategy for Schwab application technology, and was responsible for the solution architecture and digital strategy. His leadership and technical skills were crucial in shaping the current and future technology of the company to suit the ever-changing financial services industry. Charles Schwab is an American multinational financial services company offering banking, commercial banking, investing, consulting, and wealth management advisory services to both retail and institutional clients. It ranks tenth on the list of largest banks in the United States by assets and has over 400 branches, primarily in financial centers in the United States and the United Kingdom
+        - title: Technical Advisory Board Member
+          company: Apigee (now Google)
+          company_url: 'https://cloud.google.com/apigee'
+          company_logo: apigee
+          location: Greater Denver Area
+          date_start: '2014-05-01'
+          date_end: '2016-09-01'
+          description: |2-
+              Shawn McCarthy served as a Technical Advisory Board Member at Apigee for over two years. His role was focused on driving technical relationships to support API management strategies, developing product and technical roadmaps, improving the technical foundation, encouraging technical mentorship, and evangelizing API development and ecosystems. His technical acumen and strategic insight were instrumental in shaping Apigee's API management strategies and product development.
         - title: Head of Portals and APIs
           company: Vantiv (now Worldpay)
-          company_url: ''
+          company_url: 'https://www.fisglobal.com/en/merchant-solutions-worldpay?setLang=true'
           company_logo: vantiv
           location: Colorado
           date_start: '2011-11-01'
