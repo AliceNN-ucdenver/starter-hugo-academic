@@ -74,6 +74,49 @@ sections:
           date_end: '2020-03-01'
           description:  |2-
               Shawn McCarthy served as the Managing Director of Platform and Application Architecture at Charles Schwab for nearly four years. He led Schwab's platform and application architecture team, oversaw the technology strategy for Schwab application technology, and was responsible for the solution architecture and digital strategy. His leadership and technical skills were crucial in shaping the current and future technology of the company to suit the ever-changing financial services industry. Charles Schwab is an American multinational financial services company offering banking, commercial banking, investing, consulting, and wealth management advisory services to both retail and institutional clients. It ranks tenth on the list of largest banks in the United States by assets and has over 400 branches, primarily in financial centers in the United States and the United Kingdom
+        - title: Head of Portals and APIs
+          company: Vantiv (now Worldpay)
+          company_url: ''
+          company_logo: vantiv
+          location: Colorado
+          date_start: '2011-11-01'
+          date_end: '2016-09-01'
+          description:  |2-
+              Shawn McCarthy distinguished himself as Director/VP and Head of Portals and APIs at Vantiv, a leading financial institution, where he served for nearly five years. He led large development organizations, focusing on the design and architecture of API Solutions and an Enterprise Prepaid Platform. His role was crucial in facilitating secure code development, enhancing Developer Experience (DX), and implementing performance updates to a transaction-based processing platform. McCarthy's leadership was instrumental in driving firm-wide API development across the Vantiv OS, thereby utilizing modern technologies to improve performance, maintainability, and user experience. Now a part of Worldpay, Inc., Vantiv remains a pivotal player in providing payment processing and technology services.
+    design:
+      columns: '2'
+  - block: volunteering
+    content:
+      title: Volunteering
+      date_format: Jan 2006
+      items:
+        - title: Instructor, Deep Learning Institute
+          company: Nvidia
+          company_url: ''
+          company_logo: nvidia
+          location: Remote
+          date_start: '2021-03-01'
+          date_end: ''
+          description: |2-
+              Shawn McCarthy has been serving as an Instructor with Nvidia's Deep Learning Institute since March 2021. He has been imparting his knowledge in key areas of machine learning and AI, specifically in teaching Recommender Systems, Natural Language Processing (NLP), and Anomaly Detection. His role involves educating individuals and organizations about the latest AI technologies and methods, and their practical applications, thereby contributing to the broader AI community.
+        - title: AI Committee Member
+          company: AnitaB.org
+          company_url: ''
+          company_logo: AnitaB
+          location: Remote
+          date_start: '2020-05-01'
+          date_end: ''
+          description: |2-
+              Shawn McCarthy is a committee member of the AI Committee at AnitaB.org, a non-profit organization focused on the advancement of women in computing. The AI Committee develops thought leadership on the practical use and ethical implications of advances in artificial intelligence and explores ways to encourage women to be active participants in the AI community. Shawn works with other committees to enhance the value to the AnitaB members and provides AI expertise at AnitaB events as needed. At AnitaB.org, the vision is a future where the people who imagine and build technology mirror the people and societies for whom they build it.
+        - title: Co-chair, Mentoring Committee
+          company: AnitaB.org
+          company_url: ''
+          company_logo: AnitaB
+          location: Remote
+          date_start: '2019-03-01'
+          date_end: '2021-03-01'
+          description: |2-
+              From March 2019 to March 2021, Shawn McCarthy served as a co-chair for the Mentoring Committee at AnitaB.org, alongside Fatma Tarlaci. During this time, they successfully launched the mentoring platform, recruited and trained mentors, and built a sustainable program for mentorship. The Mentoring Committee supports programs for women in technology to help them grow, learn, and reach their highest potential. The goal is to connect, inspire, and guide women in computing, and organizations that view technology innovation as a strategic imperative.
     design:
       columns: '2'
   - block: accomplishments
