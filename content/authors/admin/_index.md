@@ -82,7 +82,7 @@ email: ''
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-As a distinguished AntiaB.org AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife, Shawn McCarthy is currently pursuing a PhD with a focus on the impact of global events on market sentiment. His research, which builds upon a prior study (https://www.mdpi.com/1911-8074/16/4/226), seeks to uncover the intricate relationships between world events, producing countries, and their corresponding financial markets.
+As a distinguished AntiaB.org AI Committee Member and Vice President of Global Architecture, Big Data, and Information Risk at Manulife, Shawn McCarthy is currently pursuing a PhD with a focus on the impact of global events on market sentiment. His research, which builds upon a prior study [Enhancing Financial Market Analysis and Prediction with Emotion Corpora and News Co-Occurrence Network](https://www.mdpi.com/1911-8074/16/4/226), seeks to uncover the intricate relationships between world events, producing countries, and their corresponding financial markets.
 
 McCarthy is not merely conducting research; he is creating a novel framework. His work aims to develop a comprehensive understanding of how news analysis and global events influence market sentiment across various sectors. By constructing an extensive model for market prediction and risk management, he is enabling organizations to navigate the complexities of financial markets within an interconnected global economy more effectively.
 
