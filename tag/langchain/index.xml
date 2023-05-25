@@ -71,6 +71,19 @@ You will need to add your Azure OpenAI Service details to your .env file. This s
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">AZURE_OPENAI_API_COMPLETIONS_DEPLOYMENT_NAME=&amp;#34;...&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME=&amp;#34;...&amp;#34;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">AZURE_OPENAI_API_VERSION=&amp;#34;...&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Here&amp;rsquo;s where you can find each piece of information:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>AZURE_OPENAI_API_KEY&lt;/strong>: This can be found on the resource page for the Azure OpenAI resource Key and Endpoint section.&lt;/li>
+&lt;li>&lt;strong>AZURE_OPENAI_API_INSTANCE_NAME&lt;/strong>: This is the name of the Azure OpenAI resource. For example, in my case, it&amp;rsquo;s &lt;code>ucdenver-azure-openai&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>AZURE_OPENAI_API_DEPLOYMENT_NAME&lt;/strong>: This is the main model you deployed. For example, in my case, I deployed &lt;code>gpt-35-turbo&lt;/code> and named it &lt;code>gpt-35&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>AZURE_OPENAI_API_COMPLETIONS_DEPLOYMENT_NAME&lt;/strong>: This should be the same as your &lt;code>AZURE_OPENAI_API_DEPLOYMENT_NAME&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME&lt;/strong>: This is the embeddings model you deployed. For example, in my case, I deployed &lt;code>text-embedding-ada-002&lt;/code> and named it &lt;code>text-embedding&lt;/code>.&lt;/li>
+&lt;li>&lt;strong>AZURE_OPENAI_API_VERSION&lt;/strong>: This is the current version of the API. As of now, it&amp;rsquo;s &lt;code>2023-05-15&lt;/code>. More information can be found &lt;a href="https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference" target="_blank" rel="noopener">here&lt;/a>.&lt;/li>
+&lt;/ul>
+&lt;p>To test in PostMan:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="err">GET&lt;/span> &lt;span class="err">https:&lt;/span>&lt;span class="c1">//ucdenver-azure-openai.openai.azure.com/openai/models?api-version=2023-05-15 this will give you models and capabilities - remember to set the api-key
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err">POST&lt;/span> &lt;span class="err">https:&lt;/span>&lt;span class="c1">//ucdenver-azure-openai.openai.azure.com/openai/deployments/text-embedding/embeddings?api-version=2023-05-15 this will give you the embeddings
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="nt">&amp;#34;model&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;text-embedding&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="nt">&amp;#34;input&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s2">&amp;#34;test&amp;#34;&lt;/span>&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
 &lt;/ol>
 &lt;hr>
