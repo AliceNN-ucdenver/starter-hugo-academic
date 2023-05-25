@@ -105,7 +105,7 @@ However, we're going to make some changes to the repository. We'll be removing P
    ```
 
 5. ***Set up your .env file***
-You will need to add your Azure OpenAI Service details to your .env file. This should include your Azure OpenAI API Key, instance name, deployment name, completions deployment name, embeddings deployment name, and API version. The entries in your .env file should look something like this:
+    You will need to add your Azure OpenAI Service details to your .env file. This should include your Azure OpenAI API Key, instance name, deployment name, completions deployment name, embeddings deployment name, and API version. The entries in your .env file should look something like this:
 
     ```
     AZURE_OPENAI_API_KEY="..."
@@ -115,5 +115,23 @@ You will need to add your Azure OpenAI Service details to your .env file. This s
     AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME="..."
     AZURE_OPENAI_API_VERSION="..."
     ```
+    
+    Here's where you can find each piece of information:
+
+    - **AZURE_OPENAI_API_KEY**: This can be found on the resource page for the Azure OpenAI resource Key and Endpoint section.
+    - **AZURE_OPENAI_API_INSTANCE_NAME**: This is the name of the Azure OpenAI resource. For example, in my case, it's `ucdenver-azure-openai`.
+    - **AZURE_OPENAI_API_DEPLOYMENT_NAME**: This is the main model you deployed. For example, in my case, I deployed `gpt-35-turbo` and named it `gpt-35`.
+    - **AZURE_OPENAI_API_COMPLETIONS_DEPLOYMENT_NAME**: This should be the same as your `AZURE_OPENAI_API_DEPLOYMENT_NAME`.
+    - **AZURE_OPENAI_API_EMBEDDINGS_DEPLOYMENT_NAME**: This is the embeddings model you deployed. For example, in my case, I deployed `text-embedding-ada-002` and named it `text-embedding`.
+    - **AZURE_OPENAI_API_VERSION**: This is the current version of the API. As of now, it's `2023-05-15`. More information can be found [here](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference).
+
+    To test in PostMan:
+
+    ```json
+    GET https://ucdenver-azure-openai.openai.azure.com/openai/models?api-version=2023-05-15 this will give you models and capabilities - remember to set the api-key
+    POST https://ucdenver-azure-openai.openai.azure.com/openai/deployments/text-embedding/embeddings?api-version=2023-05-15 this will give you the embeddings
+    {"model":"text-embedding","input":"test"}
+    ```
+
 ---
 This should complete the update of your GPT-4 PDF Chatbot LangChain repository to use Faiss instead of Pinecone.
