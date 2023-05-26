@@ -35,6 +35,10 @@ sections:
           description: 100%
           icon: hat-cowboy
           icon_pack: fas
+        - name: AI
+          description: 100%
+          icon: brain-circuit
+          icon_pack: fas
   - block: experience
     content:
       title: Experience
