@@ -37,8 +37,8 @@ sections:
           icon_pack: fas
         - name: AI
           description: 100%
-          icon: brain-circuit
-          icon_pack: far
+          icon: rebel
+          icon_pack: fab
   - block: experience
     content:
       title: Experience
