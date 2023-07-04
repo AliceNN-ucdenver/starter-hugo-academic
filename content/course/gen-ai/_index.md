@@ -2,7 +2,7 @@
 title: 🧠 Learn Generative Deep Learning
 linkTitle: Generative DL
 summary: CSCI XXXX Generative Deep Learning
-date: '2024-01-17'
+date: '2021-01-17'
 type: book
 tags:
   - current
