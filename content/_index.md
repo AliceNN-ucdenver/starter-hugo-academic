@@ -307,7 +307,7 @@ sections:
         - icon: discord
           icon_pack: fab
           name: DM Me
-          link: 'https://discordapp.com/users/shawnemccarthy/#6921'
+          link: 'https://discordapp.com/users/shawnemccarthy'
         - icon: video
           icon_pack: fas
           name: Teams

@@ -33,7 +33,7 @@ links:
   - icon: discord
     icon_pack: fab
     name: DM Me
-    link: 'https://discordapp.com/users/shawnemccarthy/#6921'
+    link: 'https://discordapp.com/users/shawnemccarthy'
 url_code: ''
 url_pdf: ''
 url_slides: 'uploads/AnitaB AI Day of Impact - Shawn McCarthy.pdf'
