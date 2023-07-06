@@ -48,7 +48,7 @@ links:
   - icon: discord
     icon_pack: fab
     name: DM Me
-    link: '/#contact'
+    url: 'https://discordapp.com/users/shawnemccarthy'
 url_code: ''
 url_pdf: ''
 url_slides: ''
