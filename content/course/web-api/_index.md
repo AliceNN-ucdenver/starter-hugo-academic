@@ -36,7 +36,7 @@ tags:
 - Solid understanding of JavaScript, NodeJS, Development of Web APIs, NoSQL Databases and React front-end complete solution
 
 **ABET Assessment Criteria:** 
-- This is a Computer Science Tech Elective, specifically students design, implement and test Web APIs in the context of this course
+- This is a Computer Science Tech Elective, specifically students design, implement and test Web APIs in the context of this course.
 -	(2) Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline
 
 **Course Objectives:** Full stack development (GitHub, Unit Testing, Integration Testing) focused on building Web APIs.
