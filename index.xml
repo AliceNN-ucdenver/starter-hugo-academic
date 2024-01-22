@@ -103,12 +103,6 @@
 &lt;li>&lt;a href="https://learning.postman.com/docs/collaborating-in-postman/sharing/" target="_blank" rel="noopener">Postman Learning Center: Sharing collections&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Replace &amp;ldquo;your-collection-id&amp;rdquo; with the actual ID of your collection.&lt;/p>
-&lt;p>&lt;a href="https://app.getpostman.com/run-collection/your-collection-id" target="_blank" rel="noopener">
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://run.pstmn.io/button.svg" alt="Run in Postman" loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/a>&lt;/p>
 &lt;p>&lt;a href="https://app.getpostman.com/run-collection/35315-b8f9105a-6dd8-487f-b4e0-d9b5ea266fc0?action=collection%2Ffork&amp;amp;source=rip_markdown&amp;amp;collection-url=entityId%3D35315-b8f9105a-6dd8-487f-b4e0-d9b5ea266fc0%26entityType%3Dcollection%26workspaceId%3D2d442583-1300-4d30-9dc5-f0bb7115cc91" target="_blank" rel="noopener">&lt;img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">&lt;/a>&lt;/p></description></item><item><title>Assignment One</title><link>https://mccarthy.phd/course/web-api/assignment1/</link><pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/course/web-api/assignment1/</guid><description>&lt;h2 id="purpose">Purpose&lt;/h2>
 &lt;p>The purpose of this assignment is to set up your GitHub and Render instances for future assignments. You will create an Echo server, setup auto-deployment on Render, and test the server using Postman.&lt;/p>
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
@@ -1048,7 +1042,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-859476123" class="chart">&lt;/div>
+&lt;div id="chart-836794251" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -1057,7 +1051,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-859476123', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-836794251', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
