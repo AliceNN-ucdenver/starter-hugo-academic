@@ -3,7 +3,7 @@
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
 &lt;li>Create a free account on &lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a>.&lt;/li>
-&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor.&lt;/li>
+&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor. &lt;a href="https://classroom.github.com/a/yb5GdP0a" target="_blank" rel="noopener">Classroom Assignment0&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment0" target="_blank" rel="noopener">CSC3916_Assignment0&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;li>Download an Integrated Development Environment (IDE). We recommend &lt;a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm&lt;/a> or &lt;a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode&lt;/a>.&lt;/li>
 &lt;li>Download the desktop version of &lt;a href="https://www.postman.com/downloads/" target="_blank" rel="noopener">Postman&lt;/a>.&lt;/li>
@@ -108,6 +108,7 @@
 &lt;h2 id="prerequisites">Prerequisites&lt;/h2>
 &lt;ol>
 &lt;li>Sign up for a free &lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a> account if you don&amp;rsquo;t already have one.&lt;/li>
+&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor. &lt;a href="https://classroom.github.com/a/kRMOB9fw" target="_blank" rel="noopener">Classroom Assignment1&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment1" target="_blank" rel="noopener">CSC3916_Assignment1&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;li>Sign up for a free account on &lt;a href="https://render.com/" target="_blank" rel="noopener">Render&lt;/a>.&lt;/li>
 &lt;/ol>
@@ -189,6 +190,7 @@
 &lt;li>Basic knowledge of Node.js&lt;/li>
 &lt;li>Node.js installed on your local machine&lt;/li>
 &lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
+&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor. &lt;a href="https://classroom.github.com/a/OffQ0YkY" target="_blank" rel="noopener">Classroom Assignment 2&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment2" target="_blank" rel="noopener">CSC3916_Assignment2&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;/ul>
 &lt;h2 id="step-by-step-guide">Step-by-step Guide&lt;/h2>
@@ -322,6 +324,7 @@
 &lt;li>Basic knowledge of Node.js&lt;/li>
 &lt;li>Node.js installed on your local machine&lt;/li>
 &lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
+&lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor. &lt;a href="https://classroom.github.com/a/UB619vlQ" target="_blank" rel="noopener">Classroon Assignment3&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">CSC3916_Assignment3&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">Steps&lt;/h2>
@@ -460,6 +463,7 @@ Movie "*" -- "3" Actor : contains
 &lt;li>Git and GitHub for version control&lt;/li>
 &lt;li>Basic knowledge of deployment to Heroku or Render&lt;/li>
 &lt;li>Source code from Assignment3&lt;/li>
+&lt;li>Access to &lt;a href="https://classroom.github.com/a/lL__a5zB" target="_blank" rel="noopener">Classroom&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment4" target="_blank" rel="noopener">CSC3916_Assignment4&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
 &lt;/ul>
 &lt;h2 id="step-1-create-a-new-collection-for-reviews">Step 1: Create a new Collection for Reviews&lt;/h2>
@@ -636,7 +640,8 @@ class Review {
 &lt;ul>
 &lt;li>Completion and deployment of Assignment 3 (React app supporting SignUp and Logon)&lt;/li>
 &lt;li>Completion and deployment of Assignment 4 (API supporting reviews)&lt;/li>
-&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">REACT&lt;/a> from earlier assignment3&lt;/li>
+&lt;li>Source code from &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">REACT&lt;/a> from earlier assignment3 &lt;a href="https://classroom.github.com/a/-6Q60Eay" target="_blank" rel="noopener">Classroom&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://classroom.github.com/a/Z3OJkCfV" target="_blank" rel="noopener">Classroom&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="detailed-steps">Detailed Steps&lt;/h2>
 &lt;h3 id="1-updating-api-to-include-movie-images">1. Updating API to Include Movie Images&lt;/h3>
