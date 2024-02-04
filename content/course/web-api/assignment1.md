@@ -11,8 +11,9 @@ The purpose of this assignment is to set up your GitHub and Render instances for
 ## Prerequisites
 
 1. Sign up for a free [GitHub](https://github.com/) account if you don't already have one.
-2. GitHub Classroom will clone the repository [CSC3916_Assignment1](https://github.com/AliceNN-ucdenver/CSC3916_Assignment1) for you into your GitHub Classroom repository.
-3. Sign up for a free account on [Render](https://render.com/).
+2. Accept GitHub Classroom – this should have been provided to you by your instructor. [Classroom Assignment1](https://classroom.github.com/a/kRMOB9fw)
+3. GitHub Classroom will clone the repository [CSC3916_Assignment1](https://github.com/AliceNN-ucdenver/CSC3916_Assignment1) for you into your GitHub Classroom repository. 
+4. Sign up for a free account on [Render](https://render.com/).
 
 ## Steps
 

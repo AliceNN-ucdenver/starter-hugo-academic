@@ -12,7 +12,9 @@ The objective of this assignment is to create a React Single Page Application th
 ## Pre-Requirements
 - Completion and deployment of Assignment 3 (React app supporting SignUp and Logon)
 - Completion and deployment of Assignment 4 (API supporting reviews)
-- Source code from [REACT](https://github.com/AliceNN-ucdenver/CSC3916_REACT) from earlier assignment3
+- Source code from [REACT](https://github.com/AliceNN-ucdenver/CSC3916_REACT) from earlier assignment3 [Classroom](https://classroom.github.com/a/-6Q60Eay)
+- [Classroom](https://classroom.github.com/a/Z3OJkCfV)
+
 
 ## Detailed Steps
 

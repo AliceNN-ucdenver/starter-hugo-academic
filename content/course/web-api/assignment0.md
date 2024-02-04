@@ -12,8 +12,8 @@ In this assignment, you will familiarize yourself with **Postman**, **HTTP**, an
 ## Prerequisites
 
 1. Create a free account on [GitHub](https://github.com/).
-2. Accept GitHub Classroom – this should have been provided to you by your instructor.
-3. GitHub Classroom will clone the repository [CSC3916_Assignment0](https://github.com/AliceNN-ucdenver/CSC3916_Assignment0) for you into your GitHub Classroom repository.
+2. Accept GitHub Classroom – this should have been provided to you by your instructor. [Classroom Assignment0](https://classroom.github.com/a/yb5GdP0a)
+3. GitHub Classroom will clone the repository [CSC3916_Assignment0](https://github.com/AliceNN-ucdenver/CSC3916_Assignment0) for you into your GitHub Classroom repository. 
 4. Download an Integrated Development Environment (IDE). We recommend [WebStorm](https://www.jetbrains.com/webstorm/) or [VSCode](https://code.visualstudio.com/).
 5. Download the desktop version of [Postman](https://www.postman.com/downloads/).
 
