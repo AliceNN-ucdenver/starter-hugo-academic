@@ -25,7 +25,11 @@ tags:
 **Catalog Data:** An in-depth examination of generative deep learning, focusing on the design and development of models that can generate new content. 
 
 **Co-requisites:** N/A  
-**Prerequisites:** CSCI 2421-3 Data Structures & Program Design  
+**Prerequisites:** At least one of the following courses:
+- CSCI 3320 -  Advanced Programming
+- CSCI 3920 -  Advanced Programming with Java and Python
+- CSCI 4930 -  Machine Learning
+- CSCI 4931 -  Deep Learning
 
 **Note:** Each student must sign and return the attached Prerequisites Agreement form to receive any credit for any assignment or exam. If this form is not returned by the 1st week, the student will be administratively dropped from the course.  
 
@@ -41,7 +45,8 @@ tags:
 - Understanding of the practical considerations in training generative models
 
 **ABET Assessment Criteria:** 
-- (k) An ability to apply design and development principles in the construction of software systems of varying complexity
+- This is a Computer Science Tech Elective, specifically students design, implement and test Generative Deep Learning in the context of this course.
+-	(2) Design, implement, and evaluate a computing-based solution to meet a given set of computing requirements in the context of the program’s discipline
 
 **Course Objectives:** Develop a solid understanding of generative deep learning and its applications. The course will provide hands-on experience with designing, implementing, and training generative models.
 
@@ -93,7 +98,11 @@ CU Denver faculty and staff understand the stress and pressure of college life. 
 ## FAQs
 
 {{< spoiler text="Are there prerequisites?" >}}
-CSCI 2421-3 Data Structures & Program Design 
+At least one of the following courses:
+CSCI 3320 -  Advanced Programming
+CSCI 3920 -  Advanced Programming with Java and Python
+CSCI 4930 -  Machine Learning
+CSCI 4931 -  Deep Learning
 {{< /spoiler >}}
 
 {{< spoiler text="How often do the courses run?" >}}
