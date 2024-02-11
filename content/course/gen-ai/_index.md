@@ -80,6 +80,7 @@ tags:
 **Grading Policy:**
 - Homework: 65%
 - Projects: 35%
+- Extra credit Nvidia DLI certification up to 5% (NLP or Generative AI)
 
 **Notes:** UCD Code of Honor as in the catalog: [UCD Honor Code](http://catalog.ucdenver.edu/content.php?catoid=6&navoid=530&returnto=search#Academic_Honor_Code_and_Discipline_Policies)
 
@@ -102,12 +103,12 @@ CU Denver faculty and staff understand the stress and pressure of college life. 
 
 {{< spoiler text="Are there prerequisites?" >}}
 At least one of the following courses:
-CSCI 3320 -  Advanced Programming
-CSCI 3920 -  Advanced Programming with Java and Python
-CSCI 4930 -  Machine Learning
-CSCI 4931 -  Deep Learning
+- CSCI 3320 -  Advanced Programming
+- CSCI 3920 -  Advanced Programming with Java and Python
+- CSCI 4930 -  Machine Learning
+- CSCI 4931 -  Deep Learning
 {{< /spoiler >}}
 
 {{< spoiler text="How often do the courses run?" >}}
-Every Spring
+- Every Fall
 {{< /spoiler >}}
