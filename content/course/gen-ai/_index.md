@@ -14,12 +14,12 @@ tags:
 
 # CSCI XXXX: Generative Deep Learning
 ## Course Syllabus
-### Spring, 2024
+### Fall, 2024
 
 **Instructor:** Shawn McCarthy  
 **Email:** shawn.mccarthy@ucdenver.edu  
 **Phone:** (303) 900-8613  
-**Class:** Microsoft Teams / 330PM (Monday)  
+**Class:** Microsoft Teams / 330PM (Wednesday)
 **Office Hours:** 445pm-545pm M/W Teams  
 
 **Catalog Data:** An in-depth examination of generative deep learning, focusing on the design and development of models that can generate new content. 
@@ -52,28 +52,30 @@ tags:
 
 **Textbook:** 
 - [Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play](https://www.amazon.com/Generative-Deep-Learning-Teaching-Machines/dp/1098134184)
+- [Generative AI with LangChain: Build large language model (LLM) apps with Python, ChatGPT and other LLMs](https://a.co/d/9YkBPQXhttps://a.co/d/9YkBPQX)
 
 **Topics:** Generative modeling, Deep learning, Variational autoencoders, Generative adversarial networks, Autoregressive models, Normalizing flow models, Energy-based models, Diffusion models, Transformers, Music generation, World models, Multimodal models, Ethics and challenges in generative AI
 
 ## Course Outline:
-| Lecture/Week | Date | Topic | Reading | Assignments |
-|---|---|---|---|---|
-| 1 | Jan 17th | Introduction to the course and Generative Deep Learning | Preface, Foreword, Objective and Approach, I. Introduction to Generative Deep Learning, 1. Generative Modeling | Read through "Introduction to Generative Deep Learning". Write a 1-2 page reflection on "What Is Generative Modeling?" and "Generative Versus Discriminative Modeling". |
-| 2 | Jan 24th | Deep Learning | 2. Deep Learning | Complete exercises on preparing data, building, compiling, and evaluating the model. |
-| 3 | Jan 31st | Variational Autoencoders | 3. Variational Autoencoders | Implement a basic Variational Autoencoder on Fashion-MNIST Dataset. |
-| 4 | Feb 7th | Generative Adversarial Networks | 4. Generative Adversarial Networks | Implement a simple Generative Adversarial Network. |
-| 5 | Feb 14th | Autoregressive Models | 5. Autoregressive Models | Implement an autoregressive model and generate a sequence. |
-| 6 | Feb 21st | Normalizing Flow Models | 6. Normalizing Flow Models | Experiment with a simple normalizing flow. |
-| 7 | Feb 28th | Energy-Based Models | 7. Energy-Based Models | Create a simple energy-based model. |
-| 8 | Mar 7th | Diffusion Models | 8. Diffusion Models | Implement a diffusion model. |
-| 9 | Mar 14th | Transformers for Generative Models | 9. Transformers for Generative Models | Implement a Transformer model for sequence generation. |
-| 10 | Mar 21st | Spring Break | | |
-| 11 | Mar 28th | Music Generation | 10. Music Generation | Develop a simple model for music generation. |
-| 12 | Apr 4th | World Models | 11. World Models | Implement a simple world model. |
-| 13 | Apr 11th | Multimodal Models | 12. Multimodal Models | Implement a model that combines different types of data. |
-| 14 | Apr 18th | Ethics and Challenges in Generative AI | 13. Ethics and Challenges in Generative AI | Discussion and reflection on the ethical considerations and challenges in generative AI. |
-| 15 | Apr 25th | Project Presentations | | Present final projects. |
-| 16 | May 2nd | Course Wrap-up | | Final exam and course reflection. |
+| Lecture/Week | Date     | Topic                                           | Reading | Assignments |
+|--------------|----------|-------------------------------------------------|---------|-------------|
+| 1            | Aug 19th | Introduction to the course and Generative Deep Learning | Preface, Foreword, Objective and Approach, I. Introduction to Generative Deep Learning, 1. Generative Modeling | Read through "Introduction to Generative Deep Learning". Write a 1-2 page reflection on "What Is Generative Modeling?" and "Generative Versus Discriminative Modeling". |
+| 2            | Aug 26th | Deep Learning                                   | 2. Deep Learning | Complete exercises on preparing data, building, compiling, and evaluating the model. |
+| 3            | Sep 02nd | Variational Autoencoders                        | 3. Variational Autoencoders | Implement a basic Variational Autoencoder on Fashion-MNIST Dataset. |
+| 4            | Sep 09th | Generative Adversarial Networks                 | 4. Generative Adversarial Networks | Implement a simple Generative Adversarial Network. |
+| 5            | Sep 16th | Autoregressive Models                           | 5. Autoregressive Models | Implement an autoregressive model and generate a sequence. |
+| 6            | Sep 23rd | Normalizing Flow Models                         | 6. Normalizing Flow Models | Experiment with a simple normalizing flow. |
+| 7            | Sep 30th | Energy-Based Models                             | 7. Energy-Based Models | Create a simple energy-based model. |
+| 8            | Oct 07th | Diffusion Models                                | 8. Diffusion Models | Implement a diffusion model. |
+| 9            | Oct 14th | Transformers for Generative Models              | 9. Transformers for Generative Models | Implement a Transformer model for sequence generation. |
+| 10           | Oct 21st | Music Generation                                | 10. Music Generation | Develop a simple model for music generation. |
+| 11           | Oct 28th | World Models                                    | 11. World Models | Implement a simple world model. |
+| 12           | Nov 04th | Multimodal Models                               | 12. Multimodal Models | Implement a model that combines different types of data. |
+| 13           | Nov 11th | Ethics and Challenges in Generative AI          | 13. Ethics and Challenges in Generative AI | Discussion and reflection on the ethical considerations and challenges in generative AI. |
+| 14           | Nov 18th | Project Presentations                           | | Present final projects. |
+| 15           | Nov 25th | Thanksgiving Break                              | | |
+| 16           | Dec 02nd | Course Wrap-up                                  | | Course reflection. |
+
 
 **Grading Policy:**
 - Homework: 65%
