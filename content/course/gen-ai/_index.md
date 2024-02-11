@@ -85,6 +85,7 @@ tags:
 
 **Projects** (you can work individual or as a team of up to 5)
 - Applications based on Part III 
+- Langchain based applications
 
 **Mental Health Resources:**
 CU Denver faculty and staff understand the stress and pressure of college life. Students experiencing symptoms of anxiety, depression, substance use, loneliness or other issues affecting their mental well-being, have access to campus support services such as the Student and Community Counseling Center, the Wellness Center and the Office of Case Management. Students also have access to the You@CUDenver on-line well-being platform available 24/7. More information about mental health education and resources can be found at Lynx Central and CU Denver’s Health & Wellness page. Students in imminent crisis can contact Colorado Crisis Services for immediate assistance 24/7 or walk-in to the counseling center during regular business hours.
