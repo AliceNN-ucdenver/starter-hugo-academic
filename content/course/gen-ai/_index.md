@@ -25,11 +25,8 @@ tags:
 **Catalog Data:** An in-depth examination of generative deep learning, focusing on the design and development of models that can generate new content. 
 
 **Co-requisites:** N/A  
-**Prerequisites:** At least one of the following courses:
-- CSCI 3320 -  Advanced Programming
-- CSCI 3920 -  Advanced Programming with Java and Python
-- CSCI 4930 -  Machine Learning
-- CSCI 4931 -  Deep Learning
+**Prerequisites:** 
+- CSCI 3412 -  Algorithms
 
 **Note:** Each student must sign and return the attached Prerequisites Agreement form to receive any credit for any assignment or exam. If this form is not returned by the 1st week, the student will be administratively dropped from the course.  
 
@@ -102,11 +99,7 @@ CU Denver faculty and staff understand the stress and pressure of college life. 
 ## FAQs
 
 {{< spoiler text="Are there prerequisites?" >}}
-At least one of the following courses:
-- CSCI 3320 -  Advanced Programming
-- CSCI 3920 -  Advanced Programming with Java and Python
-- CSCI 4930 -  Machine Learning
-- CSCI 4931 -  Deep Learning
+- CSCI 3412 -  Algorithms
 {{< /spoiler >}}
 
 {{< spoiler text="How often do the courses run?" >}}
