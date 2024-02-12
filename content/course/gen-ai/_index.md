@@ -32,7 +32,6 @@ tags:
 
 **Expected Knowledge at the Start of the Course:** 
 - Understanding of data structures and algorithm design
-- Basics of neural networks and deep learning
 - Familiarity with a high-level programming language, such as Python
 
 **Expected Knowledge Gained at the end of the Course:** 
