@@ -1,7 +1,7 @@
 ---
 title: 🧠 Learn Generative Deep Learning
 linkTitle: Generative DL
-summary: CSCI XXXX Generative Deep Learning
+summary: CSCI 4800 Generative Deep Learning
 date: '2021-01-17'
 type: book
 tags:
@@ -12,7 +12,7 @@ tags:
 
 {{< toc hide_on="xl" >}}
 
-# CSCI XXXX: Generative Deep Learning
+# CSCI 4800: Generative Deep Learning
 ## Course Syllabus
 ### Fall, 2024
 
