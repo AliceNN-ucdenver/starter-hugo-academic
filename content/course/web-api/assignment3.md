@@ -16,6 +16,8 @@ This assignment aims to enhance your understanding of NoSQL databases, particula
 - Access to [GitHub Classroom](https://classroom.github.com/classrooms)
 - Accept GitHub Classroom – this should have been provided to you by your instructor. [Classroon Assignment3](https://classroom.github.com/a/UB619vlQ)
 - GitHub Classroom will clone the repository [CSC3916_Assignment3](https://github.com/AliceNN-ucdenver/CSC3916_Assignment3) for you into your GitHub Classroom repository. 
+- There is also a REACT deployment that you will need to clone and deploy to a static site hosting service. [Classroom CSC3916_REACT](https://classroom.github.com/a/-6Q60Eay)
+- GitHub classroom will clone the repository [CSC3916_REACT](https://github.com/AliceNN-ucdenver/CSC3916_REACT)
 
 ## Steps
 

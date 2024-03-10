@@ -1,0 +1,12 @@
+Go to https://github.com/Homebrew/homebrew-core/search?q=hugo&type=commits
+Search for the version you want and click on it (example: hugo : update 0.95.0 bottle 78).
+From the ... menu, select “View file”
+Click the “Raw” button (example 57).
+Download this file to hugo.rb.
+brew install hugo.rb
+
+https://github.com/HugoBlox/theme-academic-cv/blob/main/config/_default/hugo.yaml
+
+https://docs.hugoblox.com/reference/update/
+
+https://discord.com/channels/722225264733716590/1175124420315058176/1175161625179852982
