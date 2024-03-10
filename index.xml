@@ -326,6 +326,8 @@
 &lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
 &lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor. &lt;a href="https://classroom.github.com/a/UB619vlQ" target="_blank" rel="noopener">Classroon Assignment3&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">CSC3916_Assignment3&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
+&lt;li>There is also a REACT deployment that you will need to clone and deploy to a static site hosting service. &lt;a href="https://classroom.github.com/a/-6Q60Eay" target="_blank" rel="noopener">Classroom CSC3916_REACT&lt;/a>&lt;/li>
+&lt;li>GitHub classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">CSC3916_REACT&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">Steps&lt;/h2>
 &lt;p>&lt;strong>Step 1: Create MongoDB Movie and User Collections&lt;/strong>&lt;/p>
@@ -1047,7 +1049,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-653712948" class="chart">&lt;/div>
+&lt;div id="chart-731846952" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -1056,7 +1058,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-653712948', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-731846952', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();

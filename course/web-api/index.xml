@@ -326,6 +326,8 @@
 &lt;li>Access to &lt;a href="https://classroom.github.com/classrooms" target="_blank" rel="noopener">GitHub Classroom&lt;/a>&lt;/li>
 &lt;li>Accept GitHub Classroom – this should have been provided to you by your instructor. &lt;a href="https://classroom.github.com/a/UB619vlQ" target="_blank" rel="noopener">Classroon Assignment3&lt;/a>&lt;/li>
 &lt;li>GitHub Classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_Assignment3" target="_blank" rel="noopener">CSC3916_Assignment3&lt;/a> for you into your GitHub Classroom repository.&lt;/li>
+&lt;li>There is also a REACT deployment that you will need to clone and deploy to a static site hosting service. &lt;a href="https://classroom.github.com/a/-6Q60Eay" target="_blank" rel="noopener">Classroom CSC3916_REACT&lt;/a>&lt;/li>
+&lt;li>GitHub classroom will clone the repository &lt;a href="https://github.com/AliceNN-ucdenver/CSC3916_REACT" target="_blank" rel="noopener">CSC3916_REACT&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="steps">Steps&lt;/h2>
 &lt;p>&lt;strong>Step 1: Create MongoDB Movie and User Collections&lt;/strong>&lt;/p>
