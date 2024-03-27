@@ -88,7 +88,7 @@ Deploy your updated React app to a static site hosting service, such as Render o
 classDiagram
   class Movie{
     +String title
-    +Date releaseDate
+    +Number releaseDate
     +String genre
     +Array actors
   }
