@@ -374,7 +374,7 @@
 &lt;div class="mermaid">classDiagram
 class Movie{
 +String title
-+Date releaseDate
++Number releaseDate
 +String genre
 +Array actors
 }
