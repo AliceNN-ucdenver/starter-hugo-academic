@@ -335,7 +335,7 @@
 &lt;p>Movie Collection Schema:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">MovieSchema&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="k">new&lt;/span> &lt;span class="nx">mongoose&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Schema&lt;/span>&lt;span class="p">({&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">title&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">required&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">index&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="kc">true&lt;/span> &lt;span class="p">},&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">releaseDate&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">Date&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">releaseDate&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">Number&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">min&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">1900&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Must be greater than 1899&amp;#39;&lt;/span>&lt;span class="p">],&lt;/span> &lt;span class="nx">max&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">2100&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;Must be less than 2100&amp;#39;&lt;/span>&lt;span class="p">]},&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">genre&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">type&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nb">String&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kr">enum&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="p">[&lt;/span>
@@ -1049,7 +1049,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-731846952" class="chart">&lt;/div>
+&lt;div id="chart-916457283" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -1058,7 +1058,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-731846952', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-916457283', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
