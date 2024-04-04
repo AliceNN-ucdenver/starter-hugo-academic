@@ -26,7 +26,7 @@ The objective of this assignment is to create a React Single Page Application th
 ```javascript
 const MovieSchema = new mongoose.Schema({
   title: { type: String, required: true, index: true },
-  releaseDate: Date,
+  releaseDate: { type: Number, min: [1900, 'Must be greater than 1899'], max: [2100, 'Must be less than 2100']},
   genre: { type: String, enum: genres },
   actors: [ActorSchema],
   imageUrl: String,
