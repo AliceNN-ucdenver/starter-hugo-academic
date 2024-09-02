@@ -19,7 +19,7 @@ tags:
 **Instructor:** Shawn McCarthy  
 **Email:** shawn.mccarthy@ucdenver.edu  
 **Phone:** (303) 900-8613  
-**Class:** Microsoft Teams / 330PM (Monday and Wednesday)
+**Class:** Microsoft Teams / 330PM (Monday and Wednesday)  
 **Office Hours:** 445pm-545pm M/W Teams  
 
 **Catalog Data:** An in-depth examination of generative deep learning, focusing on the design and development of models that can generate new content. 
