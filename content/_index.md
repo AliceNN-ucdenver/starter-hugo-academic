@@ -135,8 +135,8 @@ sections:
           company_url: ''
           company_logo: anitab
           location: Remote
-          date_start: '2020-05-01'
-          date_end: ''
+          date_start: '2022-05-01'
+          date_end: '2024-05-01'
           description: |2-
               Shawn McCarthy is a committee member of the AI Committee at AnitaB.org, a non-profit organization focused on the advancement of women in computing. The AI Committee develops thought leadership on the practical use and ethical implications of advances in artificial intelligence and explores ways to encourage women to be active participants in the AI community. Shawn works with other committees to enhance the value to the AnitaB members and provides AI expertise at AnitaB events as needed. At AnitaB.org, the vision is a future where the people who imagine and build technology mirror the people and societies for whom they build it.
         - title: Co-chair, Mentoring Committee
@@ -170,6 +170,14 @@ sections:
           organization: Nvidia
           organization_url: https://www.nvidia.com
           title: Generative AI with Diffusion Models
+          url: ''
+        - certificate_url: https://learn.nvidia.com/certificates?id=4QOpr0VSTkuNx98GRlR6CA
+          date_end: ''
+          date_start: '2024-06-04'
+          description: Building RAG Agents with LLMs
+          organization: Nvidia
+          organization_url: https://www.nvidia.com
+          title: Building RAG Agents with LLMs
           url: ''
         - certificate_url: https://courses.nvidia.com/certificates/5b642ef5f0a84d5bb92701dfcfde44f3/
           date_end: ''
