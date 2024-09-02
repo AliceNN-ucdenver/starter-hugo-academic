@@ -32,13 +32,14 @@ interests:
   - Anomaly Detection
   - Recommender Systems 
   - Natural Language Processing
+  - Diffusion Models
 
 # Education to show in About widget
 education:
   courses:
     - course: PhD Candidate, Computer Science and Information Systems
       institution: University of Colorado Denver
-      year: 2025
+      year: 2026
     - course: M.S., Computer Science and Engineering
       institution: University of Colorado Denver
       year: 2009

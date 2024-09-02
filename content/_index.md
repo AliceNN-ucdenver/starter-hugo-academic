@@ -51,7 +51,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: Vice President, Global Architecture, Risk and Data
+        - title: Vice President, Chief Architect, Global Architecture, Risk and Governance
           company: Manulife
           company_url: 'https://www.manulifeim.com/us/en'
           company_logo: manulife
@@ -129,7 +129,7 @@ sections:
           date_start: '2021-03-01'
           date_end: ''
           description: |2-
-              Shawn McCarthy has been serving as an Instructor with Nvidia's Deep Learning Institute since March 2021. He has been imparting his knowledge in key areas of machine learning and AI, specifically in teaching Recommender Systems, Natural Language Processing (NLP), and Anomaly Detection. His role involves educating individuals and organizations about the latest AI technologies and methods, and their practical applications, thereby contributing to the broader AI community.
+              Shawn McCarthy has been serving as an Instructor with Nvidia's Deep Learning Institute since March 2021. He has been imparting his knowledge in key areas of machine learning and AI, specifically in teaching Recommender Systems, Natural Language Processing (NLP), Diffusion Models, and Anomaly Detection. His role involves educating individuals and organizations about the latest AI technologies and methods, and their practical applications, thereby contributing to the broader AI community.
         - title: AI Committee Member
           company: AnitaB.org
           company_url: ''
@@ -163,6 +163,14 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - certificate_url: https://learn.nvidia.com/certificates?id=4qE5yUS0QGKNHnmi4bCpNw
+          date_end: ''
+          date_start: '2024-08-18'
+          description: Instructor Materials - Generative AI with Diffusion Models
+          organization: Nvidia
+          organization_url: https://www.nvidia.com
+          title: Generative AI with Diffusion Models
+          url: ''
         - certificate_url: https://courses.nvidia.com/certificates/5b642ef5f0a84d5bb92701dfcfde44f3/
           date_end: ''
           date_start: '2022-08-01'
