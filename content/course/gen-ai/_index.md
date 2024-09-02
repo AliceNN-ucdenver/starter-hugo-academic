@@ -19,7 +19,7 @@ tags:
 **Instructor:** Shawn McCarthy  
 **Email:** shawn.mccarthy@ucdenver.edu  
 **Phone:** (303) 900-8613  
-**Class:** Microsoft Teams / 330PM (Wednesday)
+**Class:** Microsoft Teams / 330PM (Monday and Wednesday)
 **Office Hours:** 445pm-545pm M/W Teams  
 
 **Catalog Data:** An in-depth examination of generative deep learning, focusing on the design and development of models that can generate new content. 
@@ -55,18 +55,18 @@ tags:
 ## Course Outline:
 | Lecture/Week | Date     | Topic                                           | Reading | Assignments |
 |--------------|----------|-------------------------------------------------|---------|-------------|
-| 1            | Aug 19th | Introduction to the course and Generative Deep Learning | Preface, Foreword, Objective and Approach, I. Introduction to Generative Deep Learning, 1. Generative Modeling | Read through "Introduction to Generative Deep Learning". Write a 1-2 page reflection on "What Is Generative Modeling?" and "Generative Versus Discriminative Modeling". |
-| 2            | Aug 26th | Deep Learning                                   | 2. Deep Learning | Complete exercises on preparing data, building, compiling, and evaluating the model. |
-| 3            | Sep 02nd | Variational Autoencoders                        | 3. Variational Autoencoders | Implement a basic Variational Autoencoder on Fashion-MNIST Dataset. |
-| 4            | Sep 09th | Generative Adversarial Networks                 | 4. Generative Adversarial Networks | Implement a simple Generative Adversarial Network. |
-| 5            | Sep 16th | Autoregressive Models                           | 5. Autoregressive Models | Implement an autoregressive model and generate a sequence. |
-| 6            | Sep 23rd | Normalizing Flow Models                         | 6. Normalizing Flow Models | Experiment with a simple normalizing flow. |
-| 7            | Sep 30th | Energy-Based Models                             | 7. Energy-Based Models | Create a simple energy-based model. |
-| 8            | Oct 07th | Diffusion Models                                | 8. Diffusion Models | Implement a diffusion model. |
-| 9            | Oct 14th | Transformers for Generative Models              | 9. Transformers for Generative Models | Implement a Transformer model for sequence generation. |
-| 10           | Oct 21st | Music Generation                                | 10. Music Generation | Develop a simple model for music generation. |
+| 1            | Aug 19th | Introduction to the course and Generative Deep Learning | Preface, Foreword, Objective and Approach, I. Introduction to Generative Deep Learning, 1. Generative Modeling | Read through “Introduction to Generative Deep Learning”. <br>Sign Pre-Req (Algorithms) <br>Sign-up for one of the Student Presentations below (up to 5)|
+| 2            | Aug 26th | Deep Learning                                   | 2. Deep Learning | Complete exercises on preparing data, building, compiling, and evaluating the model. Deep Learning (Student Presentation) |
+| 3            | Sep 02nd | Variational Autoencoders                        | 3. Variational Autoencoders | Implement a basic Variational Autoencoder on Fashion-MNIST Dataset. Variational Autoencoders (Student Presentation) |
+| 4            | Sep 09th | Generative Adversarial Networks  <br><br>Lab Week        | Lab1: LLM (Building Transformer-Based Natural Language Processing Applications) <br>4. Generative Adversarial Networks | Implement a simple Generative Adversarial Network. |
+| 5            | Sep 16th | Autoregressive Models                           | 5. Autoregressive Models | Implement an autoregressive model and generate a sequence. <br>Generative AI (Student Presentation) <br>Autoregressive Models (Student Presentation) |
+| 6            | Sep 23rd | Normalizing Flow Models                         | 6. Normalizing Flow Models | Experiment with a simple normalizing flow. <br>Normalizing Flow Models (Student Presentation) |
+| 7            | Sep 30th | Energy-Based Models                             | 7. Energy-Based Models | Create a simple energy-based model. <br>Energy Based Models (Student Presentation) |
+| 8            | Oct 07th | Diffusion Models <br><br>Lab Week                             | Lab 2: Nvidia Diffusion <br>8. Diffusion Models | Implement a diffusion model. |
+| 9            | Oct 14th | Transformers for Generative Models              | 9. Transformers for Generative Models | Implement a Transformer model for sequence generation. <br>Diffusion Models (Student Presentation) <br>Transformers for Generative Models (Student Presentation)  |
+| 10           | Oct 21st | Music Generation                                | 10. Music Generation | Develop a simple model for music generation. <br>Music Generation (Student Presentation) |
 | 11           | Oct 28th | World Models                                    | 11. World Models | Implement a simple world model. |
-| 12           | Nov 04th | Multimodal Models                               | 12. Multimodal Models | Implement a model that combines different types of data. |
+| 12           | Nov 04th | Multimodal Models <br><br>Lab Week                               | Lab3: RAG (Building RAG agents with LLMs) <br>12. Multimodal Models | Implement a model that combines different types of data. |
 | 13           | Nov 11th | Ethics and Challenges in Generative AI          | 13. Ethics and Challenges in Generative AI | Discussion and reflection on the ethical considerations and challenges in generative AI. |
 | 14           | Nov 18th | Project Presentations                           | | Present final projects. |
 | 15           | Nov 25th | Thanksgiving Break                              | | |
@@ -76,7 +76,6 @@ tags:
 **Grading Policy:**
 - Homework: 65%
 - Projects: 35%
-- Extra credit Nvidia DLI certification up to 5% (NLP or Generative AI)
 
 **Notes:** UCD Code of Honor as in the catalog: [UCD Honor Code](http://catalog.ucdenver.edu/content.php?catoid=6&navoid=530&returnto=search#Academic_Honor_Code_and_Discipline_Policies)
 
