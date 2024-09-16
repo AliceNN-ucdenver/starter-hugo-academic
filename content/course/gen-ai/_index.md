@@ -48,7 +48,7 @@ tags:
 
 **Textbook:** 
 - [Generative Deep Learning: Teaching Machines to Paint, Write, Compose, and Play](https://www.amazon.com/Generative-Deep-Learning-Teaching-Machines/dp/1098134184)
-- [Generative AI with LangChain: Build large language model (LLM) apps with Python, ChatGPT and other LLMs](https://a.co/d/9YkBPQXhttps://a.co/d/9YkBPQX)
+- [Generative AI with LangChain: Build large language model (LLM) apps with Python, ChatGPT and other LLMs](https://a.co/d/9DXPhtD)
 
 **Topics:** Generative modeling, Deep learning, Variational autoencoders, Generative adversarial networks, Autoregressive models, Normalizing flow models, Energy-based models, Diffusion models, Transformers, Music generation, World models, Multimodal models, Ethics and challenges in generative AI
 
