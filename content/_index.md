@@ -60,6 +60,15 @@ sections:
           date_end: ''
           description: |2-
               Shawn McCarthy has been serving as the Vice President of Global Architecture, Risk, and Data at Manulife since March 2020. Leveraging his extensive background in software development, organizational development, and solution architecture, he has been instrumental in navigating the challenges of global architecture, risk management, and data handling in various regions including North America, Asia, and Europe. With his abilities to adapt to new technologies and situations, Shawn manages the company's vast portfolio of applications (~655) supporting a variety of sectors​. Manulife is the largest insurance company in Canada and the 28th largest fund manager in the world, with a strong presence in Canada, Asia, and the United States through its John Hancock Financial division​.
+        - title: Board Member
+          company: Chief Architect Forum
+          company_url: 'https://chiefarchitectforum.org'
+          company_logo: caf
+          location: Remote
+          date_start: '2024-11-19'
+          date_end: ''
+          description: |2-
+              At CAF, our purpose is to test, challenge, and support the state of the art and science for Business and Technology Architecture and its evolution over time. We are passionate about the importance of Business Technology Architecture, and our ambition is for CAF to become the preeminent, cross-industry, global meeting place for leaders in Architecture.
         - title: Artificial Intelligence Researcher
           company: AI4Finance-Foundation
           company_url: 'https://github.com/AI4Finance-Foundation'
