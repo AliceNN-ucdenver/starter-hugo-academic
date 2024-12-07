@@ -766,7 +766,7 @@ class Review {
 &lt;li>&lt;a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">Create React App&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://github.com/mars/create-react-app-buildpack#user-content-requires" target="_blank" rel="noopener">React Buildpack&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://mongoosejs.com/docs/api.html#aggregate_Aggregate" target="_blank" rel="noopener">Mongoose Aggregate&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>The Emotion Magnitude Effect: Navigating Market Dynamics Amidst Supply Chain Events</title><link>https://mccarthy.phd/publication/mccarthy-emotion-2023/</link><pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-emotion-2023/</guid><description/></item><item><title>GitHub Introduction</title><link>https://mccarthy.phd/slides/github/</link><pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/slides/github/</guid><description>&lt;h1 id="introduction-to-github">Introduction to GitHub&lt;/h1>
+&lt;/ul></description></item><item><title>Fin-ALICE: Artificial Linguistic Intelligence Causal Econometrics</title><link>https://mccarthy.phd/publication/mccarthy-alice-2023/</link><pubDate>Tue, 26 Nov 2024 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-alice-2023/</guid><description/></item><item><title>The Emotion Magnitude Effect: Navigating Market Dynamics Amidst Supply Chain Events</title><link>https://mccarthy.phd/publication/mccarthy-emotion-2023/</link><pubDate>Tue, 21 Nov 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/publication/mccarthy-emotion-2023/</guid><description/></item><item><title>GitHub Introduction</title><link>https://mccarthy.phd/slides/github/</link><pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate><guid>https://mccarthy.phd/slides/github/</guid><description>&lt;h1 id="introduction-to-github">Introduction to GitHub&lt;/h1>
 &lt;p>&lt;a href="https://github.com/" target="_blank" rel="noopener">GitHub&lt;/a> | &lt;a href="https://docs.github.com/en" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="what-is-github">What is GitHub?&lt;/h2>
@@ -1049,7 +1049,7 @@ console.log('code block');
 &lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
 &lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
 &lt;p>Demo:&lt;/p>
-&lt;div id="chart-527491368" class="chart">&lt;/div>
+&lt;div id="chart-123567489" class="chart">&lt;/div>
 &lt;script>
 (function() {
 let a = setInterval( function() {
@@ -1058,7 +1058,7 @@ return;
 }
 clearInterval( a );
 Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-527491368', chart.data, chart.layout, {responsive: true});
+Plotly.plot('chart-123567489', chart.data, chart.layout, {responsive: true});
 });
 }, 500 );
 })();
