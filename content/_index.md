@@ -129,7 +129,7 @@ sections:
           date_start: '2021-03-01'
           date_end: ''
           description: |2-
-              Shawn McCarthy has been serving as an Instructor with Nvidia's Deep Learning Institute since March 2021. He has been imparting his knowledge in key areas of machine learning and AI, specifically in teaching Recommender Systems, Natural Language Processing (NLP), Diffusion Models, and Anomaly Detection. His role involves educating individuals and organizations about the latest AI technologies and methods, and their practical applications, thereby contributing to the broader AI community.
+              Shawn McCarthy has been serving as an Instructor with Nvidia's Deep Learning Institute since March 2021. He has been imparting his knowledge in key areas of machine learning and AI, specifically in teaching Recommender Systems, Natural Language Processing (NLP), Diffusion Models, Anomaly Detection, Building LLM Applications with Prompt Engineering, Efficient LLM Customization, and Rapid Application Development with LLMs. His role involves educating individuals and organizations about the latest AI technologies and methods, and their practical applications, thereby contributing to the broader AI community.
         - title: AI Committee Member
           company: AnitaB.org
           company_url: ''
@@ -138,7 +138,7 @@ sections:
           date_start: '2022-05-01'
           date_end: '2024-05-01'
           description: |2-
-              Shawn McCarthy is a committee member of the AI Committee at AnitaB.org, a non-profit organization focused on the advancement of women in computing. The AI Committee develops thought leadership on the practical use and ethical implications of advances in artificial intelligence and explores ways to encourage women to be active participants in the AI community. Shawn works with other committees to enhance the value to the AnitaB members and provides AI expertise at AnitaB events as needed. At AnitaB.org, the vision is a future where the people who imagine and build technology mirror the people and societies for whom they build it.
+              From May 2022 to May 2024, Shawn McCarthy served as a committee member of the AI Committee at AnitaB.org, a non-profit organization focused on the advancement of women in computing. The AI Committee develops thought leadership on the practical use and ethical implications of advances in artificial intelligence and explores ways to encourage women to be active participants in the AI community. Shawn works with other committees to enhance the value to the AnitaB members and provides AI expertise at AnitaB events as needed. At AnitaB.org, the vision is a future where the people who imagine and build technology mirror the people and societies for whom they build it.
         - title: Co-chair, Mentoring Committee
           company: AnitaB.org
           company_url: ''
@@ -163,6 +163,30 @@ sections:
       #   Leave other parameters empty if not required.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - certificate_url: https://learn.nvidia.com/certificates?id=lKnC5-FTRxihydcLaxer6g
+          date_end: ''
+          date_start: '2024-10-19'
+          description: Rapid Application Development with Large Language Models (LLMs)
+          organization: Nvidia
+          organization_url: https://www.nvidia.com
+          title: Rapid Application Development with Large Language Models (LLMs)
+          url: ''
+        - certificate_url: https://learn.nvidia.com/certificates?id=gcZ37PTnTIi-hL8kfAkH4Q
+          date_end: ''
+          date_start: '2024-11-20'
+          description: Efficient Large Language Model (LLM) Customization
+          organization: Nvidia
+          organization_url: https://www.nvidia.com
+          title: Efficient Large Language Model (LLM) Customization
+          url: ''
+        - certificate_url: https://learn.nvidia.com/certificates?id=p-e9a8bgSQ2D4eI7M8BPBQ
+          date_end: ''
+          date_start: '2024-10-13'
+          description: Building LLM Applications With Prompt Engineering
+          organization: Nvidia
+          organization_url: https://www.nvidia.com
+          title: Building LLM Applications With Prompt Engineering
+          url: ''
         - certificate_url: https://learn.nvidia.com/certificates?id=4qE5yUS0QGKNHnmi4bCpNw
           date_end: ''
           date_start: '2024-08-18'
